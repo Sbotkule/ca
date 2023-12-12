@@ -3527,3 +3527,6 @@ input[type=button].btn-block {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
+.custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
+  color: #6c757d;
+}
