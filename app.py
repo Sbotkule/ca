@@ -25,5 +25,21 @@ date_created      = db.column(db.DateTime, default=datetime.utcnow)
 def __repr__(self):
   retrun '<Location %r>' % self.location_id
 
+Class ProductMovement(db.Model):
 
+__tablename__ = 'productmovements'
+movement_id   = db.Column(db.integer, primary_key=True)
+product_id    = db.Column(db.integer, db.Foreignkey('products.product_id'))
+qty           = db.column(db.integer)
+from_location = db.column(db.integer, db.ForeignKey('locations.location_id'))
+To_location   = db.column(db.integer, db.ForeignKey('locations.location_id'))
+movement_time = db.column(db.DateTime, default=datetime.utcnow)
+
+product       = db.relationship('Product', foreign_keys=product_id)
+fromLoc       = db.relationship('Location', foreign_keys=from_location)
+toloc         = db.relationship('Location', foreign_keys=to_location)
+
+def __repr__(self):
+  return '<ProductMovement %r>' % self.movement_id
+  
 
