@@ -3267,3 +3267,6 @@ input[type=button].btn-block {
 .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropright .dropdown-toggle-split::after {
   margin-left: 0;
 }
+.dropleft .dropdown-toggle-split::before {
+  margin-right: 0;
+}
