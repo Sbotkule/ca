@@ -1613,6 +1613,10 @@ position: relative;
   .order-xl-8 {
     order: 8;
   }
+
+  .order-xl-9 {
+    order: 9;
+  }
   
   
 
