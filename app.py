@@ -138,6 +138,27 @@ try:
   except:
   return "Error occured"
 
+@app.route("/update-location/<name>", methods=["POST", "GET"])
+def updateLocation(name):
+location = Location.query.get_or_404(name)
+old_location = location.location_id
+
+if reuest.method == "POST":
+location.location_id = request.form['location_name']
+
+try:
+  db.session.commit()
+updateLocationInMovements(
+  old_location, request.form['location_name'])
+return redirect("/locations/")
+
+except:
+      return "Error occured"
+else:
+return render_template("update-location.html", location=location)
+
+@app.route("/delete-locatiuon/<id>")
+
 
   
 
