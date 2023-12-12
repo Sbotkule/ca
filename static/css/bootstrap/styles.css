@@ -2083,3 +2083,11 @@ select.form-control:focus::-ms-value {
   font-size: 1.25rem;
   line-height: 1.5;
 }
+
+.col-form-label-sm {
+  padding-top: calc(0.25rem + 1px);
+  padding-bottom: calc(0.25rem + 1px);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
