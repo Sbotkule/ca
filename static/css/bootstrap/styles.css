@@ -1770,7 +1770,11 @@ position: relative;
   background-color: #c8cbcf;
 }
   
-
+.table-success,
+.table-success > th,
+.table-success > td {
+  background-color: #c3e6cb;
+}
   
 
   
