@@ -937,3 +937,7 @@ position: relative;
   .order-sm-first {
     order: -1;
   }
+
+  .order-sm-last {
+    order: 13;
+  }
