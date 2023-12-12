@@ -2917,3 +2917,6 @@ fieldset:disabled a.btn {
   color: #0056b3;
   text-decoration: underline;
 }
+.btn-link:focus, .btn-link.focus {
+  text-decoration: underline;
+}
