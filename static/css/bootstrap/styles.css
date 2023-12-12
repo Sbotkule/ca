@@ -3362,3 +3362,8 @@ input[type=button].btn-block {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+.input-group > .form-control:not(:first-child),
+.input-group > .custom-select:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
