@@ -1205,6 +1205,12 @@ position: relative;
   .order-md-12 {
     order: 12;
   }
+
+  .offset-md-0 {
+    margin-left: 0;
+  }
+
+  
   
 
   
