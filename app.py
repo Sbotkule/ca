@@ -4,7 +4,7 @@ from collections import defaultdict
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite://inventory.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://inventory.db'
 db = SQLAlchemy(app)
 
 
@@ -42,7 +42,7 @@ toloc         = db.relationship('Location', foreign_keys=to_location)
 def __repr__(self):
   return '<ProductMovement %r>' % self.movement_id
 
-@app.route('/', methods=["post", "get"])
+@app.route('/', methods=["POST", "GET"])
 def index():
 
   if (request.method == "POST") and ('product_name' in request.form):
@@ -88,8 +88,8 @@ def viewLocation():
     locations = Location.query.order_by(Location.date_created).all()
     return "Error occured"
 else:
-locations = Location.query.order_by(Location.date_created).all()
-return render_template("locations.html", locations=locations)
+    locations = Location.query.order_by(Location.date_created).all()
+    return render_template("locations.html", locations=locations)
 
 @app.route('/products/', methods=["POST", "GET"])
 def viewProduct():
@@ -98,16 +98,16 @@ def viewProduct():
   new_product = Product(product_id=product_name)
 
   try:
-  db.session.add(new_product)
-  db.session.commit()
-  return redirect ("/products/")
+      db.session.add(new_product)
+      db.session.commit()
+      return redirect ("/products/")
 
   except:
-  products = Products.query.order_by(Product.date_createde).all()
-  return "Error occured"
+      products = Products.query.order_by(Product.date_createde).all()
+      return "Error occured"
   else:
-  products = products.query.order_by(Product.date_created).all()
-  return render_template("products.html", products=products)
+    products = products.query.order_by(Product.date_created).all()
+    return render_template("products.html", products=products)
 
   @app.route("/update-product/<name>", methods=["POST", "GET"])
   def updateProduct(name):
@@ -115,11 +115,11 @@ def viewProduct():
   old_product = product.product_id
 
   if request.method == "POST":
-    product.product_id  = reuest.form['product_name']
+    product.product_id  = request.form['product_name']
 
 try:
   db.session.commit()
-  updateProductInMovemnets(old_products, request.form['product_name'])
+  updateProductInMovemnets(old_product, request.form['product_name'])
   return redirect("/products/")
 
 except:
@@ -132,11 +132,11 @@ def deleteProduct(name):
   product_to_delete = Product.query.get_or_404(name)
 
 try:
-  db.session.delete(product_to_delete)
-  db.session.commit()
-  return redirect("/products/")
+    db.session.delete(product_to_delete)
+    db.session.commit()
+    return redirect("/products/")
   except:
-  return "Error occured"
+      return "Error occured"
 
 @app.route("/update-location/<name>", methods=["POST", "GET"])
 def updateLocation(name):
@@ -164,9 +164,9 @@ def deleteLocation(id):
 try:
   db.session.delete(location_to_delete)
   db.session.commit()
-return redirect("/locations/")
+  return redirect("/locations/")
 except:
-return "Error occured"
+  return "Error occured"
 
 @app.route("/movements/", methods=["POST", ["GET"])
 def viewMovement():
@@ -188,12 +188,12 @@ except:
 else:
   products  = Product.query.order_by(Product.date_created).all()
   locations = Location.query.order_by(Location.date_created).all()
-  movs      = ProductMovement.query\
+  movs = ProductMovement.query\
   .join()Product, ProductMovement.product_id == Product.product_id)\
   .add_columns(
-    ProductMovement.movement_id
-    ProductMovement.qty
-    Product.product_id
+    ProductMovement.movement_id,
+    ProductMovement.qty,
+    Product.product_id,
     ProductMovement.from_location,
     ProductMovement.to_location,
     ProductMovement.movement_time)\
@@ -238,7 +238,7 @@ def deleteMovement(id):
 
 @app.route("/product-balance/", methods=["POST", "GET"])
 def productBalanceReport():
-  movs = ProductsBalanceReport():
+  movs = ProductMovement.query.\
       join(Product, ProductMovement.product_id == Products.product_id).\
       add_columns(
         Product.product_id,
@@ -285,7 +285,7 @@ def getLocations():
   all()
 
 for key, location in enumerate(location):
-  if(location[location.to_location] and locationDict[location.to_location]["qty"]):
+  if(locationDict[location.to_location] and locationDict[location.to_location]["qty"]):
     locationDict[location.to_location]["qty"] += location.qty
   else:
     locationDict[location.to_loaction]["qty"] = location.qty
@@ -297,8 +297,8 @@ return locationDict
 def getDuplicate():
   location = location.form["location"]
   locations = Location.query.\
-  filter(Location.location_id == location).\
-  all()
+    filter(Location.location_id == location).\
+    all()
   print(locations)
   if locations:
     return {"output": False}
@@ -317,7 +317,7 @@ def getPDublicate():
   else:
     return {"output": True}
 
-def updateLocationMovements(oldLocation, newLocation):
+def updateLocationInMovements(oldLocation, newLocation):
   movement = ProductMovement.query.filter(ProductMovement.from_location == oldLocation).all()
   movement2 = ProductMovement.query.filter(ProductMovement.to_location == oldLocation).all()
   for mov in movement2:
