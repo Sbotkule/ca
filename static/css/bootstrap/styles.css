@@ -2140,3 +2140,10 @@ textarea.form-control {
   display: block;
   margin-top: 0.25rem;
 }
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
