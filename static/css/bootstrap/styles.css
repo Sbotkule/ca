@@ -1810,6 +1810,11 @@ position: relative;
   background-color: #abdde5;
 }
 
+.table-warning,
+.table-warning > th,
+.table-warning > td {
+  background-color: #ffeeba;
+}
   
   
 
