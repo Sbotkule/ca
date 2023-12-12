@@ -2343,3 +2343,7 @@ textarea.form-control {
 .form-check-input.is-invalid ~ .invalid-tooltip {
   display: block;
 }
+
+.was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label {
+  color: #dc3545;
+}
