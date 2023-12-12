@@ -1629,6 +1629,10 @@ position: relative;
   .order-xl-12 {
     order: 12;
   }
+
+  .offset-xl-0 {
+    margin-left: 0;
+  }
   
   
 
