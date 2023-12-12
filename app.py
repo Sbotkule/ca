@@ -293,6 +293,29 @@ for key, location in enumerate(location):
 return locationDict
 
 
+@app.route("/dub-location/", methods=["POST", "GET"])
+def getDuplicate():
+  location = location.form["location"]
+  locations = Location.query.\
+  filter(Location.location_id == location).\
+  all()
+  print(locations)
+  if locations:
+    return {"output": False}
+  else:
+    return {"output": True}
 
+@app.route("/dub-products/", methods=["POST", "GET"])
+def getPDublicate():
+  product_name = request.form["product_name"]
+  products = Products.query.\
+      filter(Product.product_id == product_name).\
+  all()
+  print(products)
+  if products:
+    return {"output": False}
+  else:
+    return {"output": True}
 
+def
 
