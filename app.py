@@ -168,6 +168,40 @@ return redirect("/locations/")
 except:
 return "Error occured"
 
+@app.route("/movements/", methods=["POST", ["GET"])
+def viewMovement():
+  if request.method == "POST" :
+     product_id      = request.form["productID"]
+     qty             = request.form["qty"]
+     fromLocation    = request.form["fromLocation"]
+     toLocation      = request.form["tolocation"]
+     new_movement    = ProductMovement(
+       product_id=product_id, qty=qty, from_location=fromlocation, to_location=toLocation)
+
+try:
+  db.session.add(new.movement)
+  db.session.commit()
+  return redirect("/movements/")
+
+except:
+  return "Error occured"
+else:
+  products  = Product.query.order_by(Product.date_created).all()
+  locations = Location.query.order_by(Location.date_created).all()
+  movs      = ProductMovement.query\
+  .join()Product, ProductMovement.product_id == Product.product_id)\
+  .add_columns(
+    ProductMovement.movement_id
+    ProductMovement.qty
+    Product.product_id
+    ProductMovement.from_location,
+    ProductMovement.to_location,
+    ProductMovement.movement_time)\
+  .all()
+
+  movements  = productMovement.query.order_by(
+    ProductMovement.movement_time).all()
+  return render_template("movements.html", movements=movs, products=products, locations=locations)
 
 
   
