@@ -1693,6 +1693,9 @@ position: relative;
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
 }
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
   
 
 
