@@ -1323,6 +1323,13 @@ position: relative;
     max-width: 41.6666666667%;
   }
 
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  
+
   
   
 
