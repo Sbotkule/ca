@@ -26,6 +26,7 @@ class Location(db.Model):
         return '<Location %r>' % self.location_id
 
 class ProductMovement(db.Model):
+    
     __tablename__ = 'productmovements'
     movement_id = db.Column(db.Integer, primary_key=True)
     product_id = db.Column(db.String(200), db.ForeignKey('products.product_id'))
@@ -56,16 +57,15 @@ def index():
             return "Error occurred"
 
 if (request.method == "POST") and ('location_name' in request.form):
-        location_name = request.form["location_name"]
-        new_location = Location(location_id=location_name)
+        location_name   = request.form["location_name"]
+        new_location    = Location(location_id=location_name)
 
         try:
             db.session.add(new_location)
             db.session.commit()
             return redirect("/")
-
         except:
-            return "Error occurred"
+            return "Error occured"
     else:
         products = Product.query.order_by(Product.date_created).all()
         locations = Location.query.order_by(Location.date_created).all()
@@ -74,32 +74,32 @@ if (request.method == "POST") and ('location_name' in request.form):
 
 @app-route('/locations/', methods=["POST", "GET"])
 def viewLocation():
-  if (request.method == "POST") and ('location_name' in request.form):
-    location_name = request.form["location_name"]
-    new_location = Location(location_id=location_name)
+    if (request.method == "POST") and ('location_name' in request.form):
+        location_name = request.form["location_name"]
+        new_location = Location(location_id=location_name)
 
-  try:
-    db.session.add(new_location)
-    db.session.commit()
-    return redirect("/locations/")
+        try:
+            db.session.add(new_location)
+            db.session.commit()
+            return redirect("/locations/")
 
-  except:
-    locations = Location.query.order_by(Location.date_created).all()
-    return "Error occured"
-else:
-    locations = Location.query.order_by(Location.date_created).all()
-    return render_template("locations.html", locations=locations)
+        except:
+            locations = Location.query.order_by(Location.date_created).all()
+            return "Error occured"
+    else:
+        locations = Location.query.order_by(Location.date_created).all()
+        return render_template("locations.html", locations=locations)
 
 @app.route('/products/', methods=["POST", "GET"])
 def viewProduct():
-  if (request.method == "POST") and ('product_name' in request.form):
-  product_name = request.form["product_name"]
-  new_product = Product(product_id=product_name)
+    if (request.method == "POST") and ('product_name' in request.form):
+        product_name = request.form["product_name"]
+        new_product = Product(product_id=product_name)
 
-  try:
-      db.session.add(new_product)
-      db.session.commit()
-      return redirect ("/products/")
+      try:
+          db.session.add(new_product)
+          db.session.commit()
+          return redirect ("/products/")
 
   except:
       products = Product.query.order_by(Product.date_createde).all()
