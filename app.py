@@ -17,7 +17,7 @@ class Product(db.Model):
 def __repr__(self):
   return '<product %r>' % self.product_id
 
-Class Location(db.Model):
+class Location(db.Model):
     __Tablename__ = 'locations'
 location-id       = db.Column(db.String(200), primary_key=True)
 date_created      = db.column(db.DateTime, default=datetime.utcnow)
@@ -25,7 +25,7 @@ date_created      = db.column(db.DateTime, default=datetime.utcnow)
 def __repr__(self):
   retrun '<Location %r>' % self.location_id
 
-Class ProductMovement(db.Model):
+class ProductMovement(db.Model):
 
 __tablename__ = 'productmovements'
 movement_id   = db.Column(db.integer, primary_key=True)
