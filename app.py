@@ -10,13 +10,12 @@ db = SQLAlchemy(app)
 
 
 class Product(db.Model):
+    __tablename__ = 'products'
+    product_id = db.Column(db.String(200), primary_key=True)
+    date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
-  __tablename__ = 'products'
-  product_id    = db.Column(db.String(200), primary_key=True)
-  date_created  = db.Column(db.DateTime, default=datetime.utcnow)
-
-def __repr__(self):
-        return '<product %r>' % self.product_id
+    def __repr__(self):
+        return '<Product %r>' % self.product_id
 
 class Location(db.Model):
     __tablename__ = 'locations'
