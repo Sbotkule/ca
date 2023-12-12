@@ -1841,6 +1841,10 @@ position: relative;
 .table-danger tbody + tbody {
   border-color: #ed969e;
 }
+
+.table-hover .table-danger:hover {
+  background-color: #f1b0b7;
+}
   
 
   
