@@ -3220,3 +3220,8 @@ input[type=button].btn-block {
   display: inline-flex;
   vertical-align: middle;
 }
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+  position: relative;
+  flex: 1 1 auto;
+}
