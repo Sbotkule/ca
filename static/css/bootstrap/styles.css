@@ -3595,3 +3595,9 @@ input[type=button].btn-block {
 .custom-switch {
   padding-left: 2.25rem;
 }
+.custom-switch .custom-control-label::before {
+  left: -2.25rem;
+  width: 1.75rem;
+  pointer-events: all;
+  border-radius: 0.5rem;
+}
