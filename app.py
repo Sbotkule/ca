@@ -317,5 +317,23 @@ def getPDublicate():
   else:
     return {"output": True}
 
-def
+def updateLocationMovements(oldLocation, newLocation):
+  movement = ProductMovement.query.filter(ProductMovement.from_location == oldLocation).all()
+  movement2 = ProductMovement.query.filter(ProductMovement.to_location == oldLocation).all()
+  for mov in movement2:
+    mov.to_location = newLocation
+  for mov in movement:
+    mov.from_location = newLocation
 
+db.session.commit()
+
+def updateProductInMovement(oldProduct, newProduct):
+  movement = ProductMovement.query.filter(ProductMovement.product_id == oldProduct).all()
+  for mov in movement:
+    mov.product_id = newProduct
+
+db.session.commit()
+
+if (__name__ == "__main__"):
+  app.run(debug=True)
+  
