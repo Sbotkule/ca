@@ -1633,6 +1633,10 @@ position: relative;
   .offset-xl-0 {
     margin-left: 0;
   }
+
+  .offset-xl-1 {
+    margin-left: 8.3333333333%;
+  }
   
   
 
