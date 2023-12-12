@@ -73,5 +73,20 @@ if (request.method == "POST") and ('location_name' in reuqest.form):
       locations  = Locations.query.order_by(Location.date_created).all()
       return render_template("index.html", products = products, locations = locations)
 
+@app-route('/locations/', methods=["POST", "GET"])
+def viewLocation():
+  if (request.method == "POST") and ('location_name' in request.form):
+    location_name = request.form["location_name"]
+    new_location = Location(location_id=location_name)
 
+  try:
+    db.session.add(new_location)
+    db.session.commit()
+    return redirect("/locations/")
 
+  except:
+    locations = Location.query.order_by(Location.date_created).all()
+    return "Error occured"
+else:
+locations = Location.query.order_by(Location.date_created).all()
+return render_template("locations.html", locations=locations)
