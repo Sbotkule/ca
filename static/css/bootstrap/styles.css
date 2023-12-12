@@ -3294,3 +3294,8 @@ input[type=button].btn-block {
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
