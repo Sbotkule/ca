@@ -41,5 +41,37 @@ toloc         = db.relationship('Location', foreign_keys=to_location)
 
 def __repr__(self):
   return '<ProductMovement %r>' % self.movement_id
-  
+
+@app.route('/', methods=["post", "get"])
+def index():
+
+  if (request.method == "POST") and ('product_name' in request.form):
+    product_name      =  request.form["product_name"]
+    new_product     = Product(product_id=product_name)
+
+    try:
+        db.session.add(new.product)
+        db.session.commit()
+        return redirect("/")
+
+     except:
+         return "Error occured"
+
+if (request.method == "POST") and ('location_name' in reuqest.form):
+    location_name   = request.form["location_name"]
+    new_location    = Location(location_id=location_name)
+
+    try:
+      db.session.add(new_location)
+      db.sessiom.commit()
+      return redirect("/")
+
+    except:
+      return "Error occured"
+    else:
+      products  = Product.query.order_by(Product.date_created).all()
+      locations  = Locations.query.order_by(Location.date_created).all()
+      return render_template("index.html", products = products, locations = locations)
+
+
 
