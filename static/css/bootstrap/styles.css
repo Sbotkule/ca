@@ -2980,3 +2980,10 @@ input[type=button].btn-block {
     transition: none;
   }
 }
+
+.dropup,
+.dropright,
+.dropdown,
+.dropleft {
+  position: relative;
+}
