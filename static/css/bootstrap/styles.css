@@ -1755,6 +1755,13 @@ position: relative;
 .table-secondary > td {
   background-color: #d6d8db;
 }
+.table-secondary th,
+.table-secondary td,
+.table-secondary thead th,
+.table-secondary tbody + tbody {
+  border-color: #b3b7bb;
+}
+
   
   
 
