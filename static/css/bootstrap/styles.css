@@ -2568,3 +2568,9 @@ fieldset:disabled a.btn {
   background-color: #138496;
   border-color: #117a8b;
 }
+.btn-info:focus, .btn-info.focus {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b;
+  box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+}
