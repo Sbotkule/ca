@@ -93,7 +93,7 @@ return render_template("locations.html", locations=locations)
 
 @app.route('/products/', methods=["POST", "GET"])
 def viewProduct():
-  if (request.method == "POST") and ('product_name' ion request.form):
+  if (request.method == "POST") and ('product_name' in request.form):
   product_name = request.form["product_name"]
   new_product = Product(product_id=product_name)
 
@@ -108,6 +108,36 @@ def viewProduct():
   else:
   products = products.query.order_by(Product.date_created).all()
   return render_template("products.html", products=products)
+
+  @app.route("/update-product/<name>", methods=["POST", "GET"])
+  def updateProduct(name):
+  product = Product.query.get_or_404(name)
+  old_product = product.product_id
+
+  if request.method == "POST":
+    product.product_id  = reuest.form['product_name']
+
+try:
+  db.session.commit()
+  updateProductInMovemnets(old_products, request.form['product_name'])
+  return redirect("/products/")
+
+except:
+  return "Error occured"
+else:
+  retuen render_template("update-product.html", product=product)
+
+@app.route("/delete-product/<name>")
+def deleteProduct(name):
+  product_to_delete = Product.query.get_or_404(name)
+
+try:
+  db.session.delete(product_to_delete)
+  db.session.commit()
+  return redirect("/products/")
+  except:
+  return "Error occured"
+
 
   
 
