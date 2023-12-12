@@ -2384,3 +2384,10 @@ textarea.form-control {
     justify-content: center;
     margin-bottom: 0;
   }
+  .form-inline .form-group {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 0;
+  }
