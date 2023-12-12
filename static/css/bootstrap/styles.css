@@ -945,3 +945,7 @@ position: relative;
   .order-sm-0 {
     order: 0;
   }
+
+  .order-sm-1 {
+    order: 1;
+  }
