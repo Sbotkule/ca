@@ -226,5 +226,17 @@ else:
   return render_template("update-movement.html", movement=movement)
 
 @app.route("/delete-movement/<int:id>")
+def deleteMovement(id):
+  movement_to_delete = ProductMovement.query.get_or_404(id)
+
+  try:
+    db.session.delete(movement_to_delete)
+    db.session.commit()
+    return redirect ("/movements/")
+  except:
+    return "Error occured"
+
+
+    
 
 
