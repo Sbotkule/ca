@@ -1586,6 +1586,10 @@ position: relative;
     order: 1;
   }
 
+  .order-xl-2 {
+    order: 2;
+  }
+
   
   
 
