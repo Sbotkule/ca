@@ -1678,6 +1678,12 @@ position: relative;
     margin-left: 91.6666666667%;
   }
 }
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+.table th,
   
 
 
