@@ -3354,3 +3354,6 @@ input[type=button].btn-block {
 .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
   z-index: 3;
 }
+.input-group > .custom-file .custom-file-input:focus {
+  z-index: 4;
+}
