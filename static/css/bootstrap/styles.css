@@ -1115,6 +1115,13 @@ position: relative;
     flex: 0 0 50%;
     max-width: 50%;
   }
+
+  .col-md-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  
   
 
   
