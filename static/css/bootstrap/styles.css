@@ -639,3 +639,9 @@ position: relative;
   flex: 0 0 50%;
   max-width: 50%;
 }
+
+.row-cols-3 > * {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
