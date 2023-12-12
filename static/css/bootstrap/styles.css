@@ -1696,6 +1696,11 @@ position: relative;
 .table tbody + tbody {
   border-top: 2px solid #dee2e6;
 }
+
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem;
+}
   
 
 
