@@ -1924,6 +1924,9 @@ position: relative;
 .table-dark thead th {
   border-color: #454d55;
 }
+.table-dark.table-bordered {
+  border: 0;
+}
   
 
   
