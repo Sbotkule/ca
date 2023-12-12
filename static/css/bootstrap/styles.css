@@ -3151,3 +3151,6 @@ input[type=button].btn-block {
 .dropleft .dropdown-toggle:empty::after {
   margin-left: 0;
 }
+.dropleft .dropdown-toggle::before {
+  vertical-align: 0;
+}
