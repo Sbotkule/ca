@@ -273,6 +273,26 @@ else:
 
 return render_template("product-balance.html", movement=balanceDict)
 
-    
+ @app.route("/movements/get-from-locations/", methods=["POST"])
+def getLocations():
+  product = request.from["productId"]
+  location = request.form["location"]
+  locationDict = defaultdict(lambda: defaultdict(dict))
+  locations = ProductsMovement.query.\
+      filter(ProductMovement.product_id == product).\
+      filter(ProductMovement.to_location != '').\
+  add_columns(ProductMovement.from_location, ProductMovement.to_location, ProductMovement.qty).\
+  all()
+
+for key, location in enumerate(location):
+  if(location[location.to_location] and locationDict[location.to_location]["qty"]):
+    locationDict[location.to_location]["qty"] += location.qty
+  else:
+    locationDict[location.to_loaction]["qty"] = location.qty
+
+return locationDict
+
+
+
 
 
