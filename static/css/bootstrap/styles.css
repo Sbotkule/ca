@@ -1373,6 +1373,10 @@ position: relative;
   .order-lg-1 {
     order: 1;
   }
+
+  .order-lg-2 {
+    order: 2;
+  }
   
 
   
