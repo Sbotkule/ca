@@ -1417,6 +1417,12 @@ position: relative;
   .order-lg-12 {
     order: 12;
   }
+
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+
+  
   
 
   
