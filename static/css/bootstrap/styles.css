@@ -1742,7 +1742,9 @@ position: relative;
   border-color: #7abaff;
 }
   
-
+.table-hover .table-primary:hover {
+  background-color: #9fcdff;
+}
   
 
   
