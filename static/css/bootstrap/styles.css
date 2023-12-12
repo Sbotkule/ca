@@ -1365,6 +1365,10 @@ position: relative;
   .order-lg-last {
     order: 13;
   }
+
+  .order-lg-0 {
+    order: 0;
+  }
   
 
   
