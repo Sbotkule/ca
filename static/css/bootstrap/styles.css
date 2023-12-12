@@ -1617,7 +1617,10 @@ position: relative;
   .order-xl-9 {
     order: 9;
   }
-  
+
+  .order-xl-10 {
+    order: 10;
+  }
   
 
   
