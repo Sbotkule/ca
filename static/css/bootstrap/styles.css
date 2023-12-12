@@ -3235,3 +3235,9 @@ input[type=button].btn-block {
 .btn-group-vertical > .btn.active {
   z-index: 1;
 }
+
+.btn-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
