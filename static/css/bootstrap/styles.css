@@ -3040,3 +3040,9 @@ input[type=button].btn-block {
     right: auto;
     left: 0;
   }
+
+.dropdown-menu-sm-right {
+    right: 0;
+    left: auto;
+  }
+}
