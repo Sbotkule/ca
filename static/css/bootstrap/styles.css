@@ -928,3 +928,8 @@ position: relative;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
+
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
