@@ -2837,3 +2837,8 @@ fieldset:disabled a.btn {
   color: #dc3545;
   border-color: #dc3545;
 }
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
