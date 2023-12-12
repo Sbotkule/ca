@@ -2076,3 +2076,10 @@ select.form-control:focus::-ms-value {
   font-size: inherit;
   line-height: 1.5;
 }
+
+.col-form-label-lg {
+  padding-top: calc(0.5rem + 1px);
+  padding-bottom: calc(0.5rem + 1px);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
