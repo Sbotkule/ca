@@ -2262,3 +2262,6 @@ textarea.form-control {
   border-color: #34ce57;
   background-color: #34ce57;
 }
+.was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
