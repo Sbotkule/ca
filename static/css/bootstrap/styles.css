@@ -2013,4 +2013,8 @@ position: relative;
   background-color: transparent;
   border: 0;
 }
+.form-control:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #495057;
+}
   
