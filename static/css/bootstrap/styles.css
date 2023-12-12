@@ -1261,6 +1261,11 @@ position: relative;
     min-width: 0;
     max-width: 100%;
   }
+
+  .row-cols-lg-1 > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   
   
 
