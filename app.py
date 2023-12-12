@@ -157,7 +157,17 @@ except:
 else:
 return render_template("update-location.html", location=location)
 
-@app.route("/delete-locatiuon/<id>")
+@app.route("/delete-location/<id>")
+def deleteLocation(id):
+  location_to_delete = Location.query.get_or_404(id)
+
+try:
+  db.session.delete(location_to_delete)
+  db.session.commit()
+return redirect("/locations/")
+except:
+return "Error occured"
+
 
 
   
