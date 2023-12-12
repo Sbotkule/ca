@@ -1762,7 +1762,9 @@ position: relative;
   border-color: #b3b7bb;
 }
 
-  
+.table-hover .table-secondary:hover {
+  background-color: #c8cbcf;
+} 
   
 
   
