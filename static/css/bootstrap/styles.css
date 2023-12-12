@@ -2009,4 +2009,8 @@ position: relative;
     transition: none;
   }
 }
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
   
