@@ -90,3 +90,24 @@ def viewLocation():
 else:
 locations = Location.query.order_by(Location.date_created).all()
 return render_template("locations.html", locations=locations)
+
+@app.route('/products/', methods=["POST", "GET"])
+def viewProduct():
+  if (request.method == "POST") and ('product_name' ion request.form):
+  product_name = request.form["product_name"]
+  new_product = Product(product_id=product_name)
+
+  try:
+  db.session.add(new_product)
+  db.session.commit()
+  return redirect ("/products/")
+
+  except:
+  products = Products.query.order_by(Product.date_createde).all()
+  return "Error occured"
+  else:
+  products = products.query.order_by(Product.date_created).all()
+  return render_template("products.html", products=products)
+
+  
+
