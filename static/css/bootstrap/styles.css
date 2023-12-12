@@ -3207,3 +3207,9 @@ input[type=button].btn-block {
   color: #6c757d;
   white-space: nowrap;
 }
+
+.dropdown-item-text {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  color: #212529;
+}
