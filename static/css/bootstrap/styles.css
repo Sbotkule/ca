@@ -3024,3 +3024,8 @@ input[type=button].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
+
+.dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
