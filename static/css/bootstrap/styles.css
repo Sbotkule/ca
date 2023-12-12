@@ -981,3 +981,7 @@ position: relative;
   .order-sm-9 {
     order: 9;
   }
+
+  .order-sm-10 {
+    order: 10;
+  }
