@@ -1775,6 +1775,12 @@ position: relative;
 .table-success > td {
   background-color: #c3e6cb;
 }
+.table-success th,
+.table-success td,
+.table-success thead th,
+.table-success tbody + tbody {
+  border-color: #8fd19e;
+}
   
 
   
