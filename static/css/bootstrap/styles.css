@@ -3095,3 +3095,6 @@ input[type=button].btn-block {
   border-bottom: 0.3em solid;
   border-left: 0.3em solid transparent;
 }
+.dropup .dropdown-toggle:empty::after {
+  margin-left: 0;
+}
