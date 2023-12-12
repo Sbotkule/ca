@@ -3299,3 +3299,8 @@ input[type=button].btn-block {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+.btn-group-vertical > .btn:not(:first-child),
+.btn-group-vertical > .btn-group:not(:first-child) > .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
