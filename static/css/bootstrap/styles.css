@@ -1845,6 +1845,10 @@ position: relative;
 .table-hover .table-danger:hover {
   background-color: #f1b0b7;
 }
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+  background-color: #f1b0b7;
+}
   
 
   
