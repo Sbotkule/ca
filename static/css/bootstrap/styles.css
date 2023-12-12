@@ -2417,4 +2417,7 @@ textarea.form-control {
     margin-right: 0.25rem;
     margin-left: 0;
   }
-  
+  .form-inline .custom-control {
+    align-items: center;
+    justify-content: center;
+  }
