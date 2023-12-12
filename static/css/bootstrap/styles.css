@@ -758,4 +758,6 @@ position: relative;
   order: 5;
 }
 
-
+.order-6 {
+  order: 6;
+}
