@@ -1781,6 +1781,10 @@ position: relative;
 .table-success tbody + tbody {
   border-color: #8fd19e;
 }
+
+.table-hover .table-success:hover {
+  background-color: #b1dfbb;
+}
   
 
   
