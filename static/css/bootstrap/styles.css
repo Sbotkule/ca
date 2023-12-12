@@ -2396,3 +2396,6 @@ textarea.form-control {
     width: auto;
     vertical-align: middle;
   }
+  .form-inline .form-control-plaintext {
+    display: inline-block;
+  }
