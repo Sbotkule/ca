@@ -1821,7 +1821,10 @@ position: relative;
 .table-warning tbody + tbody {
   border-color: #ffdf7e;
 }
-  
+
+.table-hover .table-warning:hover {
+  background-color: #ffe8a1;
+}
   
 
   
