@@ -1919,6 +1919,11 @@ position: relative;
   color: #fff;
   background-color: #343a40;
 }
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
+  border-color: #454d55;
+}
   
 
   
