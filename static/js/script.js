@@ -102,6 +102,47 @@ $(document).ready(function(){
       
     }
 
+  function ajaxCall(table){
+    $.ajax({
+      data: {
+        producted: $("#productId").val(),
+        location: $("#fromLocation").val(),
+      },
+      type: "POST",
+      url: table,
+    }).done(function (data) {
+      $.each(data,function (index,value){
+        $("fromLocation").append(
+          $("<option>", {
+            value: index,
+            text: index,
+            "data-max": value.qty
+          });
+        );
+      });
+      
+    });
+  }
+/* function ajaxCallLocation() {
+$.ajax({
+data: {
+   location: $("#location_name").val(),
+},
+type: "POST",
+url: "dub-locations",
+}).done(function(data) {
+  if(data.output) {
+  console.log(data.output)
+  } else {
+  alert("This Name is already used, please choose other one.");
+  return false;
+  }
+});
+} */
+
+
+);  
+
   
 
   
