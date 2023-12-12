@@ -1765,6 +1765,10 @@ position: relative;
 .table-hover .table-secondary:hover {
   background-color: #c8cbcf;
 } 
+.table-hover .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th {
+  background-color: #c8cbcf;
+}
   
 
   
