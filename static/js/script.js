@@ -88,6 +88,22 @@ $(document).ready(function(){
     enableOptions():
   }
 
+  function enableOption()
+    {
+      $("#qty").prop("disabled", "disabled");
+      $("#toLocation").prop("disabled", false);
+      $("#fromLocation").prop("disabled", false);
+    }
+
+  function disableOptions()
+    {$("#qty").prop("disabled", "disabled");
+      $("#toLocation").prop("disabled", "disabled");
+      $("#fromLocation").prop("disabled", "disabled");
+      
+    }
+
+  
+
   
   
     
