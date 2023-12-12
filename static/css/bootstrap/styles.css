@@ -1170,7 +1170,9 @@ position: relative;
     order: 3;
   }
   
-  
+  .order-md-4 {
+    order: 4;
+  }
 
   
   
