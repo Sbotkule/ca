@@ -1785,7 +1785,10 @@ position: relative;
 .table-hover .table-success:hover {
   background-color: #b1dfbb;
 }
-  
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+  background-color: #b1dfbb;
+} 
 
   
 
