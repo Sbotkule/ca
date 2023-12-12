@@ -3465,3 +3465,8 @@ input[type=button].btn-block {
   line-height: 1.5;
   border-radius: 0.2rem;
 }
+
+.input-group-lg > .custom-select,
+.input-group-sm > .custom-select {
+  padding-right: 1.75rem;
+}
