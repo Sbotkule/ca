@@ -11,29 +11,29 @@ db = SQLAlchemy(app)
 class Product(db.Model):
 
   __tablename__ = 'products'
-  product_id    = db.Column(db.string(200), primary_key=True)
-  date_created  = db.Column(db.DataTime, default=datetime.utcnow)
+  product_id    = db.Column(db.String(200), primary_key=True)
+  date_created  = db.Column(db.DateTime, default=datetime.utcnow)
 
 def __repr__(self):
-  return '<product %r>' % self.product_id
+        return '<product %r>' % self.product_id
 
 class Location(db.Model):
-    __Tablename__ = 'locations'
-location-id       = db.Column(db.String(200), primary_key=True)
-date_created      = db.column(db.DateTime, default=datetime.utcnow)
+    __tablename__ = 'locations'
+location_id       = db.Column(db.String(200), primary_key=True)
+date_created      = db.Column(db.DateTime, default=datetime.utcnow)
 
 def __repr__(self):
-  retrun '<Location %r>' % self.location_id
+        return '<Location %r>' % self.location_id
 
 class ProductMovement(db.Model):
 
 __tablename__ = 'productmovements'
-movement_id   = db.Column(db.integer, primary_key=True)
-product_id    = db.Column(db.integer, db.Foreignkey('products.product_id'))
-qty           = db.column(db.integer)
-from_location = db.column(db.integer, db.ForeignKey('locations.location_id'))
-To_location   = db.column(db.integer, db.ForeignKey('locations.location_id'))
-movement_time = db.column(db.DateTime, default=datetime.utcnow)
+movement_id   = db.Column(db.Integer, primary_key=True)
+product_id    = db.Column(db.String(200), db.Foreignkey('products.product_id'))
+qty           = db.Column(db.Integer)
+from_location = db.Column(db.String(200), db.ForeignKey('locations.location_id'))
+To_location   = db.Column(db.String(200), db.ForeignKey('locations.location_id'))
+movement_time = db.Column(db.DateTime, default=datetime.utcnow)
 
 product       = db.relationship('Product', foreign_keys=product_id)
 fromLoc       = db.relationship('Location', foreign_keys=from_location)
@@ -334,6 +334,6 @@ def updateProductInMovements(oldProduct, newProduct):
 
 db.session.commit()
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
   app.run(debug=True)
   
