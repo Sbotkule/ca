@@ -1875,7 +1875,12 @@ position: relative;
 .table-dark > td {
   background-color: #c6c8ca;
 }
-
+.table-dark th,
+.table-dark td,
+.table-dark thead th,
+.table-dark tbody + tbody {
+  border-color: #95999c;
+}
   
   
 
