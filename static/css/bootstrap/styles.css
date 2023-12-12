@@ -3286,3 +3286,7 @@ input[type=button].btn-block {
   align-items: flex-start;
   justify-content: center;
 }
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group {
+  width: 100%;
+}
