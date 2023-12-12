@@ -3130,3 +3130,9 @@ input[type=button].btn-block {
   margin-top: 0;
   margin-right: 0.125rem;
 }
+.dropleft .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+}
