@@ -1381,6 +1381,10 @@ position: relative;
   .order-lg-3 {
     order: 3;
   }
+
+  .order-lg-4 {
+    order: 4;
+  }
   
 
   
