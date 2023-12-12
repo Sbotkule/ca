@@ -3379,3 +3379,8 @@ input[type=button].btn-block {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+.input-group-prepend,
+.input-group-append {
+  display: flex;
+}
