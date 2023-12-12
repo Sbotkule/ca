@@ -1534,6 +1534,11 @@ position: relative;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
+
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
   
 
   
