@@ -1601,6 +1601,10 @@ position: relative;
   .order-xl-5 {
     order: 5;
   }
+
+  .order-xl-6 {
+    order: 6;
+  }
   
   
 
