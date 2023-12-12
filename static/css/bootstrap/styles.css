@@ -1850,7 +1850,11 @@ position: relative;
   background-color: #f1b0b7;
 }
   
-
+.table-light,
+.table-light > th,
+.table-light > td {
+  background-color: #fdfdfe;
+}
   
 
   
