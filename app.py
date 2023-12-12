@@ -327,7 +327,7 @@ def updateLocationMovements(oldLocation, newLocation):
 
 db.session.commit()
 
-def updateProductInMovement(oldProduct, newProduct):
+def updateProductInMovements(oldProduct, newProduct):
   movement = ProductMovement.query.filter(ProductMovement.product_id == oldProduct).all()
   for mov in movement:
     mov.product_id = newProduct
