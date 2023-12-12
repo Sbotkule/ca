@@ -3371,3 +3371,7 @@ input[type=button].btn-block {
   display: flex;
   align-items: center;
 }
+.input-group > .custom-file:not(:last-child) .custom-file-label, .input-group > .custom-file:not(:last-child) .custom-file-label::after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
