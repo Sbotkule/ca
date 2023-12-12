@@ -2987,3 +2987,7 @@ input[type=button].btn-block {
 .dropleft {
   position: relative;
 }
+
+.dropdown-toggle {
+  white-space: nowrap;
+}
