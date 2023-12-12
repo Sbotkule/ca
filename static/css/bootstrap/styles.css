@@ -1466,6 +1466,14 @@ position: relative;
     margin-left: 91.6666666667%;
   }
 }
+@media (min-width: 1200px) {
+  .col-xl {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+  }
+
 
   
   
