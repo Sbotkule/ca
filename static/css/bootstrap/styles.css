@@ -3317,3 +3317,11 @@ input[type=button].btn-block {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
