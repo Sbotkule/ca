@@ -1805,7 +1805,10 @@ position: relative;
 .table-hover .table-info:hover {
   background-color: #abdde5;
 }
-  
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+  background-color: #abdde5;
+}
 
   
   
