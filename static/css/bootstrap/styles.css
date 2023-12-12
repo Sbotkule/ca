@@ -1985,6 +1985,8 @@ position: relative;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-  
+.table-responsive > .table-bordered {
+  border: 0;
+}
 
   
