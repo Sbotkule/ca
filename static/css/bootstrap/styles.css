@@ -3389,3 +3389,7 @@ input[type=button].btn-block {
   position: relative;
   z-index: 2;
 }
+.input-group-prepend .btn:focus,
+.input-group-append .btn:focus {
+  z-index: 3;
+}
