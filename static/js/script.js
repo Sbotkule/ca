@@ -15,15 +15,37 @@ $(document).ready(function(){
     e.preventDefault();
     $.ajax({
       data: {
-        loaction: $("#location_name").val(),
+        location: $("#location_name").val(),
       },
       type: "POST",
       url: "/dub-locations/"
     }).done(function (data) {
       if (data.output) {
         $("#location_form").submit();
+        console.log(data.output);
       } else {
         alert("This Name is already used, please choose other one.");
       }
     });
   });
+
+  $("#submitProduct").on("click", function (e)) {
+    e.preventDefault();
+    $.ajax({
+      data: {
+        product_name: $("#product_name").val(),
+      },
+      type: "POST",
+      url: "/dub-products/",
+    }).done(function(data){
+      if(data.output) {
+        $("#product_form").submit();
+        console.log(data.output);
+      } else {
+        alert("This Name is Name is already used, please choose other one.");
+      }
+    });
+    });
+
+  
+  
