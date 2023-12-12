@@ -3581,3 +3581,7 @@ input[type=button].btn-block {
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
   background-color: rgba(0, 123, 255, 0.5);
 }
+
+.custom-radio .custom-control-label::before {
+  border-radius: 50%;
+}
