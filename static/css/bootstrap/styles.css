@@ -1869,7 +1869,12 @@ position: relative;
 .table-hover .table-light:hover > th {
   background-color: #ececf6;
 }
-  
+
+.table-dark,
+.table-dark > th,
+.table-dark > td {
+  background-color: #c6c8ca;
+}
 
   
   
