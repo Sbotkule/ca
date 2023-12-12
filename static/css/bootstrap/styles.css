@@ -1333,6 +1333,11 @@ position: relative;
     max-width: 58.3333333333%;
   }
 
+  .col-lg-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
   
 
   
