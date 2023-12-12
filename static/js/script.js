@@ -47,5 +47,15 @@ $(document).ready(function(){
     });
     });
 
+  $("#product_form").submit(function (e) {
+    if (!$("#product_name").val()) {
+      e.preventDefault();
+      alert("Please fill the Product first");
+    }
+  });
+
+  
+  
+    
   
   
