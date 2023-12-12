@@ -3154,3 +3154,8 @@ input[type=button].btn-block {
 .dropleft .dropdown-toggle::before {
   vertical-align: 0;
 }
+
+.dropdown-menu[x-placement^=top], .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left] {
+  right: auto;
+  bottom: auto;
+}
