@@ -2628,3 +2628,9 @@ fieldset:disabled a.btn {
   background-color: #c82333;
   border-color: #bd2130;
 }
+.btn-danger:focus, .btn-danger.focus {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
