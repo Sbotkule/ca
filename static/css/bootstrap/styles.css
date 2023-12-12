@@ -3068,3 +3068,8 @@ input[type=button].btn-block {
     left: auto;
   }
 }
+@media (min-width: 1200px) {
+  .dropdown-menu-xl-left {
+    right: auto;
+    left: 0;
+  }
