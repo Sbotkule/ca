@@ -236,6 +236,42 @@ def deleteMovement(id):
   except:
     return "Error occured"
 
+@app.route("/product-balance/", methods=["POST", "GET"])
+def productBalanceReport():
+  movs = ProductsBalanceReport():
+      join(Product, ProductMovement.product_id == Products.product_id).\
+      add_columns(
+        Product.product_id,
+        ProductMovement.qty,
+        productMovement.from_location,
+        ProductMovement.to_location,
+        ProductMovement.movement_time).\
+order_by(ProductMovement.product_id).\
+order_by(ProductMovement.movement_id).\
+all()
+balanceDict = defaultdict(lambda: defaultdict(dict))
+tempProduct = ''
+for mov in movs:
+  row = mov[0]
+if(tempProduct == row.product_id):
+  if(row.to_location and not "qty" in balancedDict[row.product_id][row.to_location]):
+    balancedDict[row.product_id][row.to_location]["qty"] = 0
+elif (row.from_location and not "qty" in balancedict[row.product_id][row.from_location]):
+balancedDict[row.product_id][row.from_location]["qty"] = 0 
+if (row.to_location and "qty" in balanceDict[row.product_id][row.to_location]):
+ balancedDict[row.product_id][row.to_location]["qty"] += row.qty
+if (row.from_location and "qty" in balanceDict[row.product_id][row.from_location]):
+  balancedDict[row.product_id][row.from_location]["qty"] -= row.qty
+  pass
+else :
+  tempProduct = row.product_id
+  if(row.to_location and not row.from_location):
+    if(balancedDict):
+      balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+else:
+    balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+
+return render_template("product-balance.html", movement=balanceDict)
 
     
 
