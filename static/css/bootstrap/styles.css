@@ -1181,7 +1181,10 @@ position: relative;
   .order-md-6 {
     order: 6;
   }
-  
+
+  .order-md-7 {
+    order: 7;
+  }
   
 
   
