@@ -3062,3 +3062,9 @@ input[type=button].btn-block {
     right: auto;
     left: 0;
   }
+
+.dropdown-menu-lg-right {
+    right: 0;
+    left: auto;
+  }
+}
