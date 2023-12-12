@@ -2399,3 +2399,7 @@ textarea.form-control {
   .form-inline .form-control-plaintext {
     display: inline-block;
   }
+  .form-inline .input-group,
+.form-inline .custom-select {
+    width: auto;
+  }
