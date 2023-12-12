@@ -3516,3 +3516,6 @@ input[type=button].btn-block {
   border-color: #007bff;
   background-color: #007bff;
 }
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
