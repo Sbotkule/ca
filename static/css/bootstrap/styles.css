@@ -2167,3 +2167,7 @@ textarea.form-control {
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
   color: #6c757d;
 }
+
+.form-check-label {
+  margin-bottom: 0;
+}
