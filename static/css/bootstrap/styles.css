@@ -2688,3 +2688,9 @@ fieldset:disabled a.btn {
   background-color: #23272b;
   border-color: #1d2124;
 }
+.btn-dark:focus, .btn-dark.focus {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
