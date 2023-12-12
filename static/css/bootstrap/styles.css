@@ -1801,6 +1801,10 @@ position: relative;
 .table-info tbody + tbody {
   border-color: #86cfda;
 }
+
+.table-hover .table-info:hover {
+  background-color: #abdde5;
+}
   
 
   
