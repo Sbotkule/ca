@@ -2457,3 +2457,6 @@ textarea.form-control {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+.btn.disabled, .btn:disabled {
+  opacity: 0.65;
+}
