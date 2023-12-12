@@ -1735,6 +1735,12 @@ position: relative;
 .table-primary > td {
   background-color: #b8daff;
 }
+.table-primary th,
+.table-primary td,
+.table-primary thead th,
+.table-primary tbody + tbody {
+  border-color: #7abaff;
+}
   
 
   
