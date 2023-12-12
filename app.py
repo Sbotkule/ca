@@ -3,4 +3,10 @@ from flask_sqlalchemy import SQLAlchemy
 from collections import defaultdict
 from datetime import datetime
 
+app = Flask(__name__)
+app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite://inventory.db'
+db = SQLAchemy(app)
+
+
+class Product(db.Model)
 
