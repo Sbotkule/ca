@@ -3349,3 +3349,8 @@ input[type=button].btn-block {
 .input-group > .custom-file + .custom-file {
   margin-left: -1px;
 }
+.input-group > .form-control:focus,
+.input-group > .custom-select:focus,
+.input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
+  z-index: 3;
+}
