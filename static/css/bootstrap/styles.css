@@ -3619,3 +3619,6 @@ input[type=button].btn-block {
   background-color: #fff;
   transform: translateX(0.75rem);
 }
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(0, 123, 255, 0.5);
+}
