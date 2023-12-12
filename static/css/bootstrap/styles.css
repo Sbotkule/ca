@@ -1855,7 +1855,12 @@ position: relative;
 .table-light > td {
   background-color: #fdfdfe;
 }
-  
+.table-light th,
+.table-light td,
+.table-light thead th,
+.table-light tbody + tbody {
+  border-color: #fbfcfc;
+}  
 
   
 
