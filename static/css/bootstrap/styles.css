@@ -1504,6 +1504,12 @@ position: relative;
     max-width: 16.6666666667%;
   }
 
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+
   
   
 
