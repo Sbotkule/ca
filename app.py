@@ -43,18 +43,17 @@ class ProductMovement(db.Model):
 
 @app.route('/', methods=["POST", "GET"])
 def index():
+    if (request.method == "POST") and ('product_name' in request.form):
+        product_name = request.form["product_name"]
+        new_product = Product(product_id=product_name)
 
-  if (request.method == "POST") and ('product_name' in request.form):
-    product_name      =  request.form["product_name"]
-    new_product     = Product(product_id=product_name)
+        try:
+            db.session.add(new_product)
+            db.session.commit()
+            return redirect("/")
 
-    try:
-        db.session.add(new.product)
-        db.session.commit()
-        return redirect("/")
-
-     except:
-         return "Error occured"
+        except:
+            return "Error occurred"
 
 if (request.method == "POST") and ('location_name' in request.form):
     location_name   = request.form["location_name"]
