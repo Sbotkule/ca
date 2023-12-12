@@ -54,6 +54,36 @@ $(document).ready(function(){
     }
   });
 
+  $("#movement_from").submit(function(e){
+    var msg = ''
+    if ($("#qty").val() && $("#qty").val() <=0){
+      msg += "Please add positive number";
+    }
+
+    if (!$("#productId").val() || !$("#qty").val()) {
+      msg += "Please fill the missing fields\n";
+    }
+
+    if (!$("fromLocation").val() && !$("toLocation").val()) {
+      msg += "Please choose a warehouse\n";
+    }
+
+    if (
+      parseInt($("#fromLocation option:selected").attr("data-max")) <
+      parseInt($("#qty").val())
+  ) {
+      msg +=
+        "Please Note that the quantity in the warehouse must be less then ("+
+        $("#fromLocation option:selected").attr("data-max") +
+        ")";
+    }
+
+    if (msg) {
+      e.preventDefault();
+      alert(msg);
+    }
+  });
+
   
   
     
