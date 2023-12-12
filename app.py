@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from collections import defaultdict
 from datetime import datetime
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://inventory.db'
 db = SQLAlchemy(app)
@@ -32,7 +33,7 @@ movement_id   = db.Column(db.Integer, primary_key=True)
 product_id    = db.Column(db.String(200), db.Foreignkey('products.product_id'))
 qty           = db.Column(db.Integer)
 from_location = db.Column(db.String(200), db.ForeignKey('locations.location_id'))
-To_location   = db.Column(db.String(200), db.ForeignKey('locations.location_id'))
+to_location   = db.Column(db.String(200), db.ForeignKey('locations.location_id'))
 movement_time = db.Column(db.DateTime, default=datetime.utcnow)
 
 product       = db.relationship('Product', foreign_keys=product_id)
@@ -57,7 +58,7 @@ def index():
      except:
          return "Error occured"
 
-if (request.method == "POST") and ('location_name' in reuqest.form):
+if (request.method == "POST") and ('location_name' in request.form):
     location_name   = request.form["location_name"]
     new_location    = Location(location_id=location_name)
 
@@ -70,7 +71,7 @@ if (request.method == "POST") and ('location_name' in reuqest.form):
       return "Error occured"
     else:
       products  = Product.query.order_by(Product.date_created).all()
-      locations  = Locations.query.order_by(Location.date_created).all()
+      locations  = Location.query.order_by(Location.date_created).all()
       return render_template("index.html", products = products, locations = locations)
 
 @app-route('/locations/', methods=["POST", "GET"])
@@ -103,10 +104,10 @@ def viewProduct():
       return redirect ("/products/")
 
   except:
-      products = Products.query.order_by(Product.date_createde).all()
+      products = Product.query.order_by(Product.date_createde).all()
       return "Error occured"
   else:
-    products = products.query.order_by(Product.date_created).all()
+    products = product.query.order_by(Product.date_created).all()
     return render_template("products.html", products=products)
 
   @app.route("/update-product/<name>", methods=["POST", "GET"])
@@ -125,7 +126,7 @@ try:
 except:
   return "Error occured"
 else:
-  retuen render_template("update-product.html", product=product)
+  return render_template("update-product.html", product=product)
 
 @app.route("/delete-product/<name>")
 def deleteProduct(name):
@@ -143,7 +144,7 @@ def updateLocation(name):
 location = Location.query.get_or_404(name)
 old_location = location.location_id
 
-if reuest.method == "POST":
+if request.method == "POST":
 location.location_id = request.form['location_name']
 
 try:
