@@ -3304,3 +3304,8 @@ input[type=button].btn-block {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.btn-group-toggle > .btn,
+.btn-group-toggle > .btn-group > .btn {
+  margin-bottom: 0;
+}
