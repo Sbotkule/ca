@@ -84,6 +84,10 @@ $(document).ready(function(){
     }
   });
 
+  if ($("#productId").val()) {
+    enableOptions():
+  }
+
   
   
     
