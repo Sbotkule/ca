@@ -1358,6 +1358,9 @@ position: relative;
     max-width: 100%;
   }
 
+  .order-lg-first {
+    order: -1;
+  }
   
 
   
