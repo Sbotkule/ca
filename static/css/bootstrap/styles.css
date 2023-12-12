@@ -3615,3 +3615,7 @@ input[type=button].btn-block {
     transition: none;
   }
 }
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  transform: translateX(0.75rem);
+}
