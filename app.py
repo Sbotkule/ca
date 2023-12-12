@@ -203,6 +203,28 @@ else:
     ProductMovement.movement_time).all()
   return render_template("movements.html", movements=movs, products=products, locations=locations)
 
+@app.route("/update-movement/<int:id>", methods=["POST", "GET"])
+def updateMovement(id):
 
-  
+  movement  = ProductMovement.query.get_or_404(id)
+  products  = Product.query.order_by(Product.date_created).all()
+  locations = Location.query.order_by(Location.date_created).all()
+
+if request.method == "POST":
+  movement.product_id = request.form["productId"]
+  movement.qty        = request.form["qty"]
+  movement.from_location = request.form["fromLocation"]
+  movement.to_location = request.form["toLocation"]
+
+try:
+  db.session.commit()
+  return redirect("/movements/")
+
+except:
+  return "Error occured"
+else:
+  return render_template("update-movement.html", movement=movement)
+
+@app.route("/delete-movement/<int:id>")
+
 
