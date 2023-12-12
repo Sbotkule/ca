@@ -8,5 +8,16 @@ app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite://inventory.db'
 db = SQLAchemy(app)
 
 
-class Product(db.Model)
+class Product(db.Model):
+
+  __tablename__ = 'products'
+  product_id    = db.Column(db.string(200), primary_key=True)
+  date_created  = db.Column(db.DataTime, default=datetime.utcnow)
+
+def __repr__(self):
+  return '<product %r>' % self.product_id
+
+Class Location(db.model):
+
+
 
