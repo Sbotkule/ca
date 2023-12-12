@@ -3079,3 +3079,9 @@ input[type=button].btn-block {
     left: auto;
   }
 }
+.dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 0.125rem;
+}
