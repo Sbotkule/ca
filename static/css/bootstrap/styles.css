@@ -1829,6 +1829,11 @@ position: relative;
 .table-hover .table-warning:hover > th {
   background-color: #ffe8a1;
 }
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+  background-color: #f5c6cb;
+}
   
 
   
