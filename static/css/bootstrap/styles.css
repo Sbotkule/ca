@@ -3136,3 +3136,6 @@ input[type=button].btn-block {
   vertical-align: 0.255em;
   content: "";
 }
+.dropleft .dropdown-toggle::after {
+  display: none;
+}
