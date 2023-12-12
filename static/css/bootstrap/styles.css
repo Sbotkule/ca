@@ -838,7 +838,12 @@ position: relative;
     max-width: 100%;
   }
 
-.row-cols-sm-1 > * {
+  .row-cols-sm-1 > * {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .row-cols-sm-2 > * {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
