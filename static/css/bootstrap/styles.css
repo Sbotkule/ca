@@ -1750,6 +1750,11 @@ position: relative;
   background-color: #9fcdff;
 } 
 
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+  background-color: #d6d8db;
+}
   
   
 
