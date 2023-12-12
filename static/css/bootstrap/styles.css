@@ -1862,7 +1862,9 @@ position: relative;
   border-color: #fbfcfc;
 }  
 
-  
+.table-hover .table-light:hover {
+  background-color: #ececf6;
+} 
 
   
 
