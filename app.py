@@ -56,20 +56,21 @@ def index():
             return "Error occurred"
 
 if (request.method == "POST") and ('location_name' in request.form):
-    location_name   = request.form["location_name"]
-    new_location    = Location(location_id=location_name)
+        location_name = request.form["location_name"]
+        new_location = Location(location_id=location_name)
 
-    try:
-      db.session.add(new_location)
-      db.sessiom.commit()
-      return redirect("/")
+        try:
+            db.session.add(new_location)
+            db.session.commit()
+            return redirect("/")
 
-    except:
-      return "Error occured"
+        except:
+            return "Error occurred"
     else:
-      products  = Product.query.order_by(Product.date_created).all()
-      locations  = Location.query.order_by(Location.date_created).all()
-      return render_template("index.html", products = products, locations = locations)
+        products = Product.query.order_by(Product.date_created).all()
+        locations = Location.query.order_by(Location.date_created).all()
+        return render_template("index.html", products=products, locations=locations)
+
 
 @app-route('/locations/', methods=["POST", "GET"])
 def viewLocation():
