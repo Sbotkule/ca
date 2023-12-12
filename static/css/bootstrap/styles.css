@@ -3280,3 +3280,9 @@ input[type=button].btn-block {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
+
+.btn-group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
