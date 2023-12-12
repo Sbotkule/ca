@@ -3119,3 +3119,6 @@ input[type=button].btn-block {
 .dropright .dropdown-toggle:empty::after {
   margin-left: 0;
 }
+.dropright .dropdown-toggle::after {
+  vertical-align: 0;
+}
