@@ -961,3 +961,7 @@ position: relative;
   .order-sm-4 {
     order: 4;
   }
+
+  .order-sm-5 {
+    order: 5;
+  }
