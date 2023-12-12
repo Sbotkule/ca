@@ -710,3 +710,8 @@ position: relative;
   flex: 0 0 75%;
   max-width: 75%;
 }
+
+.col-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
