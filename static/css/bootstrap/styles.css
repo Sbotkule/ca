@@ -1790,6 +1790,11 @@ position: relative;
   background-color: #b1dfbb;
 } 
 
+.table-info,
+.table-info > th,
+.table-info > td {
+  background-color: #bee5eb;
+}
   
 
   
