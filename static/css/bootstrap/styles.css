@@ -8075,3 +8075,13 @@ button.bg-dark:focus {
 .mx-sm-5 {
     margin-right: 3rem !important;
   }
+
+  .mb-sm-5,
+.my-sm-5 {
+    margin-bottom: 3rem !important;
+  }
+
+  .ml-sm-5,
+.mx-sm-5 {
+    margin-left: 3rem !important;
+  }
