@@ -5433,3 +5433,7 @@ a.close.disabled {
   max-height: calc(100vh - 1rem);
   overflow: hidden;
 }
+.modal-dialog-scrollable .modal-header,
+.modal-dialog-scrollable .modal-footer {
+  flex-shrink: 0;
+}
