@@ -8542,3 +8542,12 @@ button.bg-dark:focus {
 .px-md-0 {
     padding-left: 0 !important;
   }
+
+  .p-md-1 {
+    padding: 0.25rem !important;
+  }
+
+  .pt-md-1,
+.py-md-1 {
+    padding-top: 0.25rem !important;
+  }
