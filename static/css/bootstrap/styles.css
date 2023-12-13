@@ -8133,3 +8133,7 @@ button.bg-dark:focus {
 .px-sm-1 {
     padding-left: 0.25rem !important;
   }
+
+  .p-sm-2 {
+    padding: 0.5rem !important;
+  }
