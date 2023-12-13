@@ -6486,3 +6486,8 @@ button.bg-dark:focus {
   .d-xl-flex {
     display: flex !important;
   }
+
+  .d-xl-inline-flex {
+    display: inline-flex !important;
+  }
+}
