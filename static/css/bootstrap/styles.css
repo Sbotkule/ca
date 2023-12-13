@@ -9465,3 +9465,13 @@ button.bg-dark:focus {
 .py-xl-3 {
     padding-top: 1rem !important;
   }
+
+  .pr-xl-3,
+.px-xl-3 {
+    padding-right: 1rem !important;
+  }
+
+  .pb-xl-3,
+.py-xl-3 {
+    padding-bottom: 1rem !important;
+  }
