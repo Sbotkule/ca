@@ -8334,3 +8334,8 @@ button.bg-dark:focus {
 .my-sm-n5 {
     margin-top: -3rem !important;
   }
+
+  .mr-sm-n5,
+.mx-sm-n5 {
+    margin-right: -3rem !important;
+  }
