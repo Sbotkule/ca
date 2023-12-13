@@ -6495,3 +6495,7 @@ button.bg-dark:focus {
   .d-print-none {
     display: none !important;
   }
+
+.d-print-inline {
+    display: inline !important;
+  }
