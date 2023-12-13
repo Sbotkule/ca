@@ -6367,3 +6367,7 @@ button.bg-dark:focus {
   .d-sm-table-row {
     display: table-row !important;
   }
+
+  .d-sm-table-cell {
+    display: table-cell !important;
+  }
