@@ -6886,3 +6886,7 @@ button.bg-dark:focus {
   .flex-md-wrap-reverse {
     flex-wrap: wrap-reverse !important;
   }
+
+  .flex-md-fill {
+    flex: 1 1 auto !important;
+  }
