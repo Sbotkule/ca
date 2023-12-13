@@ -5759,3 +5759,7 @@ a.close.disabled {
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-right-color: #fff;
 }
+
+.bs-popover-bottom, .bs-popover-auto[x-placement^=bottom] {
+  margin-top: 0.5rem;
+}
