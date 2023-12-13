@@ -5644,3 +5644,7 @@ a.close.disabled {
   border-width: 0.4rem 0.4rem 0.4rem 0;
   border-right-color: #000;
 }
+
+.bs-tooltip-bottom, .bs-tooltip-auto[x-placement^=bottom] {
+  padding: 0.4rem 0;
+}
