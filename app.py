@@ -271,7 +271,7 @@ for mov in movs:
             else:
                 balancedDict[row.product_id][row.to_location]["qty"] = row.qty
 
-return render_template("product-balance.html", movement=balanceDict)
+return render_template("product-balance.html", movements=balanceDict)
 
 @app.route("/movements/get-from-locations/", methods=["POST"])
 def getLocations():
