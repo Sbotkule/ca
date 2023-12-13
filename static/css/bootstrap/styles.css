@@ -7003,3 +7003,7 @@ button.bg-dark:focus {
   .flex-lg-column {
     flex-direction: column !important;
   }
+
+  .flex-lg-row-reverse {
+    flex-direction: row-reverse !important;
+  }
