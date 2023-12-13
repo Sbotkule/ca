@@ -9758,3 +9758,7 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
