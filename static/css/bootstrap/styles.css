@@ -6260,3 +6260,7 @@ button.bg-dark:focus {
 .rounded-sm {
   border-radius: 0.2rem !important;
 }
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
