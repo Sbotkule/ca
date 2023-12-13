@@ -5116,3 +5116,8 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-top-width: 1px;
     border-left-width: 0;
   }
+  .list-group-horizontal-sm > .list-group-item + .list-group-item.active {
+    margin-left: -1px;
+    border-left-width: 1px;
+  }
+}
