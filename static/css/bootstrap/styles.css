@@ -5488,3 +5488,6 @@ a.close.disabled {
   height: 100vh;
   background-color: #000;
 }
+.modal-backdrop.fade {
+  opacity: 0;
+}
