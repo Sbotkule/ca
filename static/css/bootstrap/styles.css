@@ -4643,3 +4643,7 @@ input[type=button].btn-block {
   font-size: 1.25rem;
   line-height: 1.5;
 }
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
