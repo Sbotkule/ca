@@ -8985,6 +8985,11 @@ button.bg-dark:focus {
     padding-top: 0.25rem !important;
   }
 
+  .pr-lg-1,
+.px-lg-1 {
+    padding-right: 0.25rem !important;
+  }
+
 
 
 
