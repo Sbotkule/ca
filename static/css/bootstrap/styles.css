@@ -8013,3 +8013,7 @@ button.bg-dark:focus {
 .mx-sm-2 {
     margin-left: 0.5rem !important;
   }
+
+  .m-sm-3 {
+    margin: 1rem !important;
+  }
