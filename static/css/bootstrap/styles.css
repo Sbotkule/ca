@@ -8720,6 +8720,11 @@ button.bg-dark:focus {
     margin-top: -1rem !important;
   }
 
+  .mr-md-n3,
+.mx-md-n3 {
+    margin-right: -1rem !important;
+  }
+
 
 
 
