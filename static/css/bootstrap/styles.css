@@ -5300,3 +5300,8 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #818182;
   border-color: #818182;
 }
+
+.list-group-item-dark {
+  color: #1b1e21;
+  background-color: #c6c8ca;
+}
