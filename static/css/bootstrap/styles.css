@@ -6898,3 +6898,7 @@ button.bg-dark:focus {
   .flex-md-grow-1 {
     flex-grow: 1 !important;
   }
+
+  .flex-md-shrink-0 {
+    flex-shrink: 0 !important;
+  }
