@@ -5193,3 +5193,6 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-left-width: 1px;
   }
 }
+.list-group-flush {
+  border-radius: 0;
+}
