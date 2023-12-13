@@ -6692,3 +6692,7 @@ button.bg-dark:focus {
 .align-content-around {
   align-content: space-around !important;
 }
+
+.align-content-stretch {
+  align-content: stretch !important;
+}
