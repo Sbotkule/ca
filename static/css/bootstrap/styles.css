@@ -7236,3 +7236,7 @@ button.bg-dark:focus {
   .align-content-xl-between {
     align-content: space-between !important;
   }
+
+  .align-content-xl-around {
+    align-content: space-around !important;
+  }
