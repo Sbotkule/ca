@@ -4943,3 +4943,6 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-dark hr {
   border-top-color: #b9bbbe;
 }
+.alert-dark .alert-link {
+  color: #040505;
+}
