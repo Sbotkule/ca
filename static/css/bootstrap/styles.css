@@ -9513,3 +9513,13 @@ button.bg-dark:focus {
 .py-xl-5 {
     padding-top: 3rem !important;
   }
+
+  .pr-xl-5,
+.px-xl-5 {
+    padding-right: 3rem !important;
+  }
+
+  .pb-xl-5,
+.py-xl-5 {
+    padding-bottom: 3rem !important;
+  }
