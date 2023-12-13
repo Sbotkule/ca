@@ -5656,3 +5656,7 @@ a.close.disabled {
   border-width: 0 0.4rem 0.4rem;
   border-bottom-color: #000;
 }
+
+.bs-tooltip-left, .bs-tooltip-auto[x-placement^=left] {
+  padding: 0 0.4rem;
+}
