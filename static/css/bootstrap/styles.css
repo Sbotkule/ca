@@ -8489,3 +8489,8 @@ button.bg-dark:focus {
 .my-md-4 {
     margin-bottom: 1.5rem !important;
   }
+
+  .ml-md-4,
+.mx-md-4 {
+    margin-left: 1.5rem !important;
+  }
