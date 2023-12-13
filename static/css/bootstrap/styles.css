@@ -9215,3 +9215,12 @@ button.bg-dark:focus {
 .mx-lg-n5 {
     margin-left: -3rem !important;
   }
+
+  .m-lg-auto {
+    margin: auto !important;
+  }
+
+  .mt-lg-auto,
+.my-lg-auto {
+    margin-top: auto !important;
+  }
