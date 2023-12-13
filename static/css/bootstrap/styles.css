@@ -4438,3 +4438,10 @@ input[type=button].btn-block {
   left: 0;
   padding: 1.25rem;
 }
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  flex-shrink: 0;
+  width: 100%;
+}
