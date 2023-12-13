@@ -9706,3 +9706,7 @@ button.bg-dark:focus {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.text-left {
+  text-align: left !important;
+}
