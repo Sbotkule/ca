@@ -7570,3 +7570,8 @@ button.bg-dark:focus {
 .mx-2 {
   margin-right: 0.5rem !important;
 }
+
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
