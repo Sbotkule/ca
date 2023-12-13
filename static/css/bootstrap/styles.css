@@ -7099,3 +7099,7 @@ button.bg-dark:focus {
   .align-content-lg-between {
     align-content: flex-between !important;
   }
+
+  .align-content-lg-around {
+    align-content: flex-around !important;
+  }
