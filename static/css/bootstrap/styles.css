@@ -7063,3 +7063,7 @@ button.bg-dark:focus {
   .justify-content-lg-around {
     justify-content: around !important;
   }
+
+  .align-items-lg-start {
+    align-items: flex-start !important;
+  }
