@@ -135,8 +135,8 @@ def deleteProduct(name):
         db.session.delete(product_to_delete)
         db.session.commit()
         return redirect("/products/")
-  except:
-      return "Error occured"
+    except:
+        return "Error occured"
 
 @app.route("/update-location/<name>", methods=["POST", "GET"])
 def updateLocation(name):
