@@ -8099,3 +8099,8 @@ button.bg-dark:focus {
 .px-sm-0 {
     padding-right: 0 !important;
   }
+
+  .pb-sm-0,
+.py-sm-0 {
+    padding-bottom: 0 !important;
+  }
