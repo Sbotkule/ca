@@ -8008,3 +8008,8 @@ button.bg-dark:focus {
 .my-sm-2 {
     margin-bottom: 0.5rem !important;
   }
+
+  .ml-sm-2,
+.mx-sm-2 {
+    margin-left: 0.5rem !important;
+  }
