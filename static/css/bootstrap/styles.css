@@ -9806,3 +9806,7 @@ button.bg-dark:focus {
 .font-italic {
   font-style: italic !important;
 }
+
+.text-white {
+  color: #fff !important;
+}
