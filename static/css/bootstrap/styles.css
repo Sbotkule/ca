@@ -9115,5 +9115,10 @@ button.bg-dark:focus {
     margin-bottom: -0.25rem !important;
   }
 
+  .ml-lg-n1,
+.mx-lg-n1 {
+    margin-left: -0.25rem !important;
+  }
+
 
 
