@@ -6749,3 +6749,7 @@ button.bg-dark:focus {
   .flex-sm-wrap-reverse {
     flex-wrap: wrap-reverse !important;
   }
+
+  .flex-sm-fill {
+    flex: 1 1 auto !important;
+  }
