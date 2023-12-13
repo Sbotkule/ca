@@ -7357,3 +7357,7 @@ button.bg-dark:focus {
 .overflow-auto {
   overflow: auto !important;
 }
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
