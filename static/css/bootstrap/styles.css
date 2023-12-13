@@ -8368,3 +8368,9 @@ button.bg-dark:focus {
 .my-sm-auto {
     margin-bottom: auto !important;
   }
+
+  .ml-sm-auto,
+.mx-sm-auto {
+    margin-left: auto !important;
+  }
+}
