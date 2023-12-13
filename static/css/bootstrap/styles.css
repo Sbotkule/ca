@@ -9019,6 +9019,10 @@ button.bg-dark:focus {
     padding-bottom: 0.5rem !important;
   }
 
+  .pl-lg-2,
+.px-lg-2 {
+    padding-left: 0.5rem !important;
+  }
 
 
 
