@@ -7950,3 +7950,8 @@ button.bg-dark:focus {
 .my-sm-0 {
     margin-top: 0 !important;
   }
+
+.mr-sm-0,
+.mx-sm-0 {
+    margin-right: 0 !important;
+  }
