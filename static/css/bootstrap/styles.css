@@ -6950,3 +6950,7 @@ button.bg-dark:focus {
   .align-content-md-start {
     align-content: flex-start !important;
   }
+
+  .align-content-md-end {
+    align-content: flex-end !important;
+  }
