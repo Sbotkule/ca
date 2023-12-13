@@ -9736,3 +9736,7 @@ button.bg-dark:focus {
   .text-md-left {
     text-align: left !important;
   }
+
+  .text-md-right {
+    text-align: right !important;
+  }
