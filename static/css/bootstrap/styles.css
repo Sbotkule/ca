@@ -6429,3 +6429,7 @@ button.bg-dark:focus {
   .d-lg-inline-block {
     display: inline-block !important;
   }
+
+  .d-lg-block {
+    display: block !important;
+  }
