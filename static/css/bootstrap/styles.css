@@ -6445,3 +6445,7 @@ button.bg-dark:focus {
   .d-lg-table-cell {
     display: table-cell !important;
   }
+
+  .d-lg-flex {
+    display: flex !important;
+  }
