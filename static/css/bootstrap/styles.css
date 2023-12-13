@@ -6080,3 +6080,7 @@ a.close.disabled {
 .align-middle {
   vertical-align: middle !important;
 }
+
+.align-bottom {
+  vertical-align: bottom !important;
+}
