@@ -5418,3 +5418,6 @@ a.close.disabled {
     transition: none;
   }
 }
+.modal.show .modal-dialog {
+  transform: none;
+}
