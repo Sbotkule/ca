@@ -7027,3 +7027,7 @@ button.bg-dark:focus {
   .flex-lg-fill {
     flex: 1 1 auto !important;
   }
+
+  .flex-lg-grow-0 {
+    flex-grow: 0 !important;
+  }
