@@ -9934,3 +9934,7 @@ a.text-dark:hover, a.text-dark:focus {
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
