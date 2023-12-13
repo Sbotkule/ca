@@ -9609,3 +9609,13 @@ button.bg-dark:focus {
 .my-xl-n4 {
     margin-top: -1.5rem !important;
   }
+
+  .mr-xl-n4,
+.mx-xl-n4 {
+    margin-right: -1.5rem !important;
+  }
+
+  .mb-xl-n4,
+.my-xl-n4 {
+    margin-bottom: -1.5rem !important;
+  }
