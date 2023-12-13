@@ -9240,3 +9240,7 @@ button.bg-dark:focus {
     margin-left: auto !important;
   }
 }
+@media (min-width: 1200px) {
+  .m-xl-0 {
+    margin: 0 !important;
+  }
