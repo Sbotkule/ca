@@ -8229,3 +8229,7 @@ button.bg-dark:focus {
 .px-sm-5 {
     padding-left: 3rem !important;
   }
+
+  .m-sm-n1 {
+    margin: -0.25rem !important;
+  }
