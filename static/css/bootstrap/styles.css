@@ -6437,3 +6437,7 @@ button.bg-dark:focus {
   .d-lg-table {
     display: table !important;
   }
+
+  .d-lg-table-row {
+    display: table-row !important;
+  }
