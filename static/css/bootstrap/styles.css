@@ -9972,3 +9972,7 @@ h3 {
   body {
     min-width: 992px !important;
   }
+
+  .container {
+    min-width: 992px !important;
+  }
