@@ -7200,3 +7200,7 @@ button.bg-dark:focus {
   .justify-content-xl-around {
     justify-content: space-around !important;
   }
+
+  .align-items-xl-start {
+    align-items: flex-start !important;
+  }
