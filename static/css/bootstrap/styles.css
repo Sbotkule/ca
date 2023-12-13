@@ -6938,3 +6938,7 @@ button.bg-dark:focus {
   .align-items-md-center {
     align-items: center !important;
   }
+
+  .align-items-md-baseline {
+    align-items: baseline !important;
+  }
