@@ -8580,3 +8580,8 @@ button.bg-dark:focus {
 .px-md-2 {
     padding-right: 0.5rem !important;
   }
+
+  .pb-md-2,
+.py-md-2 {
+    padding-bottom: 0.5rem !important;
+  }
