@@ -7031,3 +7031,7 @@ button.bg-dark:focus {
   .flex-lg-grow-0 {
     flex-grow: 0 !important;
   }
+
+  .flex-lg-grow-1 {
+    flex-grow: 1 !important;
+  }
