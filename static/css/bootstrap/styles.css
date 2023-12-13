@@ -8851,6 +8851,11 @@ button.bg-dark:focus {
     margin-bottom: 0.25rem !important;
   }
 
+  .ml-lg-1,
+.mx-lg-1 {
+    margin-left: 0.25rem !important;
+  }
+
 
 
 
