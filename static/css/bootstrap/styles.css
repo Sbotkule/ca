@@ -7940,3 +7940,8 @@ button.bg-dark:focus {
 .mx-auto {
   margin-left: auto !important;
 }
+
+@media (min-width: 576px) {
+  .m-sm-0 {
+    margin: 0 !important;
+  }
