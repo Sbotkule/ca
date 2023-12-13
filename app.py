@@ -259,9 +259,9 @@ def productBalanceReport():
             elif (row.from_location and not "qty" in balancedict[row.product_id][row.from_location]):
                 balancedDict[row.product_id][row.from_location]["qty"] = 0 
             if (row.to_location and "qty" in balanceDict[row.product_id][row.to_location]):
-            balancedDict[row.product_id][row.to_location]["qty"] += row.qty
+                balancedDict[row.product_id][row.to_location]["qty"] += row.qty
             if (row.from_location and "qty" in balanceDict[row.product_id][row.from_location]):
-            balancedDict[row.product_id][row.from_location]["qty"] -= row.qty
+                balancedDict[row.product_id][row.from_location]["qty"] -= row.qty
             pass
         else :
             tempProduct = row.product_id
