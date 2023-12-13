@@ -5382,3 +5382,7 @@ a.close.disabled {
 .toast-body {
   padding: 0.75rem;
 }
+
+.modal-open {
+  overflow: hidden;
+}
