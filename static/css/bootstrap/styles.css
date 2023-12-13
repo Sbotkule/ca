@@ -3743,3 +3743,13 @@ input[type=button].btn-block {
   border-left: inherit;
   border-radius: 0 0.25rem 0.25rem 0;
 }
+
+.custom-range {
+  width: 100%;
+  height: 1.4rem;
+  padding: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
