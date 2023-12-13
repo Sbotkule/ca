@@ -4940,3 +4940,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #d6d8d9;
   border-color: #c6c8ca;
 }
+.alert-dark hr {
+  border-top-color: #b9bbbe;
+}
