@@ -8388,3 +8388,8 @@ button.bg-dark:focus {
 .mx-md-0 {
     margin-right: 0 !important;
   }
+
+  .mb-md-0,
+.my-md-0 {
+    margin-bottom: 0 !important;
+  }
