@@ -6680,3 +6680,7 @@ button.bg-dark:focus {
 .align-content-end {
   align-content: flex-end !important;
 }
+
+.align-content-center {
+  align-content: center !important;
+}
