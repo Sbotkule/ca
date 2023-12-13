@@ -5421,3 +5421,6 @@ a.close.disabled {
 .modal.show .modal-dialog {
   transform: none;
 }
+.modal.modal-static .modal-dialog {
+  transform: scale(1.02);
+}
