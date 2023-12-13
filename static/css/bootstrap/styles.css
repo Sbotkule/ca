@@ -4719,3 +4719,7 @@ a.badge-primary:focus, a.badge-primary.focus {
   color: #fff;
   background-color: #6c757d;
 }
+a.badge-secondary:hover, a.badge-secondary:focus {
+  color: #fff;
+  background-color: #545b62;
+}
