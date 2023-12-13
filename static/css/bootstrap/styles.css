@@ -9658,3 +9658,7 @@ button.bg-dark:focus {
     margin-top: auto !important;
   }
 
+  .mr-xl-auto,
+.mx-xl-auto {
+    margin-right: auto !important;
+  }
