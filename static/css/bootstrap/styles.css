@@ -7656,3 +7656,8 @@ button.bg-dark:focus {
 .p-0 {
   padding: 0 !important;
 }
+
+.pt-0,
+.py-0 {
+  padding-top: 0 !important;
+}
