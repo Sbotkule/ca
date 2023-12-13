@@ -5551,3 +5551,6 @@ a.close.disabled {
   .modal-dialog-scrollable {
     max-height: calc(100% - 3.5rem);
   }
+  .modal-dialog-scrollable .modal-content {
+    max-height: calc(100vh - 3.5rem);
+  }
