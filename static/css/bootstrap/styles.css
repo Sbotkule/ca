@@ -8783,6 +8783,16 @@ button.bg-dark:focus {
     margin-left: -3rem !important;
   }
 
+  .m-md-auto {
+    margin: auto !important;
+  }
+
+  .mt-md-auto,
+.my-md-auto {
+    margin-top: auto !important;
+  }
+
+
 
 
 
