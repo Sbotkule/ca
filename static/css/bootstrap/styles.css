@@ -7035,3 +7035,7 @@ button.bg-dark:focus {
   .flex-lg-grow-1 {
     flex-grow: 1 !important;
   }
+
+  .flex-lg-shrink-0 {
+    flex-shrink: 0 !important;
+  }
