@@ -7956,7 +7956,11 @@ button.bg-dark:focus {
     margin-right: 0 !important;
   }
 
-.mb-sm-0,
+  .mb-sm-0,
 .my-sm-0 {
     margin-bottom: 0 !important;
+  }
+  .ml-sm-0,
+.mx-sm-0 {
+    margin-left: 0 !important;
   }
