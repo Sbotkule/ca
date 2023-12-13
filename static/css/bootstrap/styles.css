@@ -4068,3 +4068,8 @@ input[type=button].btn-block {
     padding-left: 0;
   }
 }
+@media (min-width: 576px) {
+  .navbar-expand-sm {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
