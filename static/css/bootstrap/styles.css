@@ -6737,3 +6737,7 @@ button.bg-dark:focus {
   .flex-sm-column-reverse {
     flex-direction: column-reverse !important;
   }
+
+  .flex-sm-wrap {
+    flex-wrap: wrap !important;
+  }
