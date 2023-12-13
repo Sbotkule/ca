@@ -335,5 +335,5 @@ def updateProductInMovements(oldProduct, newProduct):
     db.session.commit()
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
   
