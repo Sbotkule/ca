@@ -9822,3 +9822,7 @@ a.text-primary:hover, a.text-primary:focus {
 .text-secondary {
   color: #6c757d !important;
 }
+
+a.text-secondary:hover, a.text-secondary:focus {
+  color: #494f54 !important;
+}
