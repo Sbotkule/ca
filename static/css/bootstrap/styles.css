@@ -6712,3 +6712,7 @@ button.bg-dark:focus {
 .align-self-center {
   align-self: center !important;
 }
+
+.align-self-baseline {
+  align-self: baseline !important;
+}
