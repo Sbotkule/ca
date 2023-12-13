@@ -6478,3 +6478,7 @@ button.bg-dark:focus {
   .d-xl-table-row {
     display: table-row !important;
   }
+
+  .d-xl-table-cell {
+    display: table-cell !important;
+  }
