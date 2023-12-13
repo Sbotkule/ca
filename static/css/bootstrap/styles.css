@@ -10251,3 +10251,6 @@ body {
 .sb-sidenav-light .sb-sidenav-menu .nav-link:hover {
   color: #007bff;
 }
+.sb-sidenav-light .sb-sidenav-menu .nav-link.active {
+  color: #007bff;
+}
