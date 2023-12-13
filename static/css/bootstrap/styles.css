@@ -5875,3 +5875,9 @@ a.close.disabled {
 .active.carousel-item-left {
   transform: translateX(-100%);
 }
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+}
