@@ -9648,3 +9648,7 @@ button.bg-dark:focus {
 .mx-xl-n5 {
     margin-left: -3rem !important;
   }
+
+  .m-xl-auto {
+    margin: auto !important;
+  }
