@@ -3971,3 +3971,6 @@ input[type=button].btn-block {
 .tab-content > .tab-pane {
   display: none;
 }
+.tab-content > .active {
+  display: block;
+}
