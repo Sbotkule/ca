@@ -5612,3 +5612,9 @@ a.close.disabled {
   width: 0.8rem;
   height: 0.4rem;
 }
+.tooltip .arrow::before {
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
