@@ -6999,3 +6999,7 @@ button.bg-dark:focus {
   .flex-lg-row {
     flex-direction: row !important;
   }
+  
+  .flex-lg-column {
+    flex-direction: column !important;
+  }
