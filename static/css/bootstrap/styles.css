@@ -3658,3 +3658,6 @@ input[type=button].btn-block {
   color: #6c757d;
   background-color: #e9ecef;
 }
+.custom-select::-ms-expand {
+  display: none;
+}
