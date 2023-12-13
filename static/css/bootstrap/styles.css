@@ -7059,3 +7059,7 @@ button.bg-dark:focus {
   .justify-content-lg-between {
     justify-content: between !important;
   }
+
+  .justify-content-lg-around {
+    justify-content: around !important;
+  }
