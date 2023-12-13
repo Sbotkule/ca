@@ -7872,3 +7872,8 @@ button.bg-dark:focus {
 .m-n4 {
   margin: -1.5rem !important;
 }
+
+.mt-n4,
+.my-n4 {
+  margin-top: -1.5rem !important;
+}
