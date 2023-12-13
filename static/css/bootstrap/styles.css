@@ -4946,3 +4946,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-dark .alert-link {
   color: #040505;
 }
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
