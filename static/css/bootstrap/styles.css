@@ -8827,6 +8827,15 @@ button.bg-dark:focus {
     margin-bottom: 0 !important;
   }
 
+  .ml-lg-0,
+.mx-lg-0 {
+    margin-left: 0 !important;
+  }
+
+  .m-lg-1 {
+    margin: 0.25rem !important;
+  }
+
 
 
 
