@@ -4179,3 +4179,7 @@ input[type=button].btn-block {
     display: flex !important;
     flex-basis: auto;
   }
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
