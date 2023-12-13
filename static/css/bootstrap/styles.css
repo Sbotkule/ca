@@ -7834,3 +7834,8 @@ button.bg-dark:focus {
 .mx-n2 {
   margin-right: -0.5rem !important;
 }
+
+.mb-n2,
+.my-n2 {
+  margin-bottom: -0.5rem !important;
+}
