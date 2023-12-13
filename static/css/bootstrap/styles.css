@@ -10202,3 +10202,8 @@ body {
   padding: 0.75rem;
   flex-shrink: 0;
 }
+
+.sb-sidenav-dark {
+  background-color: #738290;
+  color: rgba(255, 255, 255, 0.5);
+}
