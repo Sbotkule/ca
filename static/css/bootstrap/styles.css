@@ -7180,3 +7180,7 @@ button.bg-dark:focus {
   .flex-xl-shrink-1 {
     flex-shrink: 1 !important;
   }
+
+  .justify-content-xl-start {
+    justify-content: flex-start !important;
+  }
