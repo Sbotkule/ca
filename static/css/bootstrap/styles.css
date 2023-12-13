@@ -7164,3 +7164,7 @@ button.bg-dark:focus {
   .flex-xl-fill {
     flex: 1 1 auto !important;
   }
+
+  .flex-xl-grow-0 {
+    flex-grow: 0 !important;
+  }
