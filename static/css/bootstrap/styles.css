@@ -7863,3 +7863,8 @@ button.bg-dark:focus {
 .my-n3 {
   margin-bottom: -1rem !important;
 }
+
+.ml-n3,
+.mx-n3 {
+  margin-left: -1rem !important;
+}
