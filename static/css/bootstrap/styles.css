@@ -8142,3 +8142,8 @@ button.bg-dark:focus {
 .py-sm-2 {
     padding-top: 0.5rem !important;
   }
+
+  .pr-sm-2,
+.px-sm-2 {
+    padding-right: 0.5rem !important;
+  }
