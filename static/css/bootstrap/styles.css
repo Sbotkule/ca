@@ -5648,3 +5648,6 @@ a.close.disabled {
 .bs-tooltip-bottom, .bs-tooltip-auto[x-placement^=bottom] {
   padding: 0.4rem 0;
 }
+.bs-tooltip-bottom .arrow, .bs-tooltip-auto[x-placement^=bottom] .arrow {
+  top: 0;
+}
