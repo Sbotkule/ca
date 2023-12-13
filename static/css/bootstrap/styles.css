@@ -5816,3 +5816,6 @@ a.close.disabled {
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
+.popover-header:empty {
+  display: none;
+}
