@@ -6076,3 +6076,7 @@ a.close.disabled {
 .align-top {
   vertical-align: top !important;
 }
+
+.align-middle {
+  vertical-align: middle !important;
+}
