@@ -5749,3 +5749,8 @@ a.close.disabled {
   height: 1rem;
   margin: 0.3rem 0;
 }
+.bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^=right] > .arrow::before {
+  left: 0;
+  border-width: 0.5rem 0.5rem 0.5rem 0;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
