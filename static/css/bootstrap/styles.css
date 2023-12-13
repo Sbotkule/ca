@@ -6600,3 +6600,7 @@ button.bg-dark:focus {
 .flex-column-reverse {
   flex-direction: column-reverse !important;
 }
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
