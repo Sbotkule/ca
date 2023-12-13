@@ -10083,3 +10083,7 @@ body {
   #layoutSidenav #layoutSidenav_nav {
     transform: translateX(0);
   }
+  #layoutSidenav #layoutSidenav_content {
+    margin-left: 0;
+    transition: margin 0.15s ease-in-out;
+  }
