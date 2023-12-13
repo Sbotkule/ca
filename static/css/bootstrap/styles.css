@@ -9072,5 +9072,14 @@ button.bg-dark:focus {
     padding-left: 1.5rem !important;
   }
 
+  .p-lg-5 {
+    padding: 3rem !important;
+  }
+
+  .pt-lg-5,
+.py-lg-5 {
+    padding-top: 3rem !important;
+  }
+
 
 
