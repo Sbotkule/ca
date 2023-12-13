@@ -9552,3 +9552,7 @@ button.bg-dark:focus {
 .mx-xl-n1 {
     margin-left: -0.25rem !important;
   }
+
+  .m-xl-n2 {
+    margin: -0.5rem !important;
+  }
