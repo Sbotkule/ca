@@ -5739,3 +5739,7 @@ a.close.disabled {
   border-width: 0.5rem 0.5rem 0;
   border-top-color: #fff;
 }
+
+.bs-popover-right, .bs-popover-auto[x-placement^=right] {
+  margin-left: 0.5rem;
+}
