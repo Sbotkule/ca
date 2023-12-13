@@ -8061,3 +8061,7 @@ button.bg-dark:focus {
 .mx-sm-4 {
     margin-left: 1.5rem !important;
   }
+
+  .m-sm-5 {
+    margin: 3rem !important;
+  }
