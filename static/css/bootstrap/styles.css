@@ -5854,3 +5854,8 @@ a.close.disabled {
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: none;
+  }
+}
