@@ -8041,3 +8041,8 @@ button.bg-dark:focus {
   .m-sm-4 {
     margin: 1.5rem !important;
   }
+
+  .mt-sm-4,
+.my-sm-4 {
+    margin-top: 1.5rem !important;
+  }
