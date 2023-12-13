@@ -3780,3 +3780,9 @@ input[type=button].btn-block {
   -webkit-appearance: none;
           appearance: none;
 }
+@media (prefers-reduced-motion: reduce) {
+  .custom-range::-webkit-slider-thumb {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
