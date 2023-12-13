@@ -6970,3 +6970,7 @@ button.bg-dark:focus {
   .align-content-md-stretch {
     align-content: stretch !important;
   }
+
+  .align-self-md-auto {
+    align-self: auto !important;
+  }
