@@ -5000,3 +5000,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
           animation: progress-bar-stripes 1s linear infinite;
 }
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar-animated {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
