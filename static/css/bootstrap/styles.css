@@ -6817,3 +6817,7 @@ button.bg-dark:focus {
   .align-content-sm-end {
     align-content: flex-end !important;
   }
+
+  .align-content-sm-center {
+    align-content: center !important;
+  }
