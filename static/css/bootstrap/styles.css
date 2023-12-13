@@ -5358,3 +5358,6 @@ a.close.disabled {
 .toast:not(:last-child) {
   margin-bottom: 0.75rem;
 }
+.toast.showing {
+  opacity: 1;
+}
