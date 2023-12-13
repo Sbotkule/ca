@@ -6132,3 +6132,7 @@ button.bg-info:hover,
 button.bg-info:focus {
   background-color: #117a8b !important;
 }
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
