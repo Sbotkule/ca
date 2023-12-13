@@ -6400,3 +6400,7 @@ button.bg-dark:focus {
   .d-md-table {
     display: table !important;
   }
+
+  .d-md-table-row {
+    display: table-row !important;
+  }
