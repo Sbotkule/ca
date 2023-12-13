@@ -5786,3 +5786,7 @@ a.close.disabled {
   content: "";
   border-bottom: 1px solid #f7f7f7;
 }
+
+.bs-popover-left, .bs-popover-auto[x-placement^=left] {
+  margin-right: 0.5rem;
+}
