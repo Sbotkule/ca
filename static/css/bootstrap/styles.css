@@ -4260,3 +4260,6 @@ input[type=button].btn-block {
   display: flex !important;
   flex-basis: auto;
 }
+.navbar-expand .navbar-toggler {
+  display: none;
+}
