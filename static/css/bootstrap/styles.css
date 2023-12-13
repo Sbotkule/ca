@@ -6380,3 +6380,7 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
