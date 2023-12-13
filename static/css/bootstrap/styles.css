@@ -7289,3 +7289,8 @@ button.bg-dark:focus {
   .float-sm-right {
     float: right !important;
   }
+
+  .float-sm-none {
+    float: none !important;
+  }
+}
