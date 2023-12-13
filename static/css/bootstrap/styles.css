@@ -6841,3 +6841,7 @@ button.bg-dark:focus {
   .align-self-sm-start {
     align-self: flex-start !important;
   }
+
+  .align-self-sm-end {
+    align-self: flex-end !important;
+  }
