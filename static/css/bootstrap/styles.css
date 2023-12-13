@@ -5870,3 +5870,8 @@ a.close.disabled {
 .active.carousel-item-right {
   transform: translateX(100%);
 }
+
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+  transform: translateX(-100%);
+}
