@@ -4566,3 +4566,6 @@ input[type=button].btn-block {
 .breadcrumb-item {
   display: flex;
 }
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem;
+}
