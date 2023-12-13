@@ -7188,3 +7188,7 @@ button.bg-dark:focus {
   .justify-content-xl-end {
     justify-content: flex-end !important;
   }
+
+  .justify-content-xl-center {
+    justify-content: flex-center !important;
+  }
