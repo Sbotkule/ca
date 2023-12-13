@@ -8594,3 +8594,8 @@ button.bg-dark:focus {
   .p-md-3 {
     padding: 1rem !important;
   }
+
+  .pt-md-3,
+.py-md-3 {
+    padding-top: 1rem !important;
+  }
