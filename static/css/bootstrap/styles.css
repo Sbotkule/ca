@@ -4238,3 +4238,6 @@ input[type=button].btn-block {
   padding-right: 0;
   padding-left: 0;
 }
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
