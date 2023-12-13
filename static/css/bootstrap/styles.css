@@ -9489,3 +9489,13 @@ button.bg-dark:focus {
 .py-xl-4 {
     padding-top: 1.5rem !important;
   }
+
+  .pr-xl-4,
+.px-xl-4 {
+    padding-right: 1.5rem !important;
+  }
+
+  .pb-xl-4,
+.py-xl-4 {
+    padding-bottom: 1.5rem !important;
+  }
