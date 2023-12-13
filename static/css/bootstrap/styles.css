@@ -5060,3 +5060,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   pointer-events: none;
   background-color: #fff;
 }
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
