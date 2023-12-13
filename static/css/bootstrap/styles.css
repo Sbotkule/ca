@@ -5429,3 +5429,7 @@ a.close.disabled {
   display: flex;
   max-height: calc(100% - 1rem);
 }
+.modal-dialog-scrollable .modal-content {
+  max-height: calc(100vh - 1rem);
+  overflow: hidden;
+}
