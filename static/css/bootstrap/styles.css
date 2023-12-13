@@ -6068,3 +6068,7 @@ a.close.disabled {
   width: 1rem;
   height: 1rem;
 }
+
+.align-baseline {
+  vertical-align: baseline !important;
+}
