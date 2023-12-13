@@ -9096,5 +9096,14 @@ button.bg-dark:focus {
     padding-left: 3rem !important;
   }
 
+  .m-lg-n1 {
+    margin: -0.25rem !important;
+  }
+
+  .mt-lg-n1,
+.my-lg-n1 {
+    margin-top: -0.25rem !important;
+  }
+
 
 
