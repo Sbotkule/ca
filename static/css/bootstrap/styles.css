@@ -10138,3 +10138,9 @@ body {
 .sb-sidenav-menu .nav-link .sb-nav-link-icon {
   margin-right: 0.5rem;
 }
+
+.sb-topnav {
+  padding-left: 0;
+  height: 56px;
+  z-index: 1039;
+}
