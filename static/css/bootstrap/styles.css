@@ -7156,3 +7156,7 @@ button.bg-dark:focus {
   .flex-xl-nowrap {
     flex-wrap: nowrap !important;
   }
+
+  .flex-xl-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
