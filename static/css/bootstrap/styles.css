@@ -6454,3 +6454,7 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
+@media (min-width: 1200px) {
+  .d-xl-none {
+    display: none !important;
+  }
