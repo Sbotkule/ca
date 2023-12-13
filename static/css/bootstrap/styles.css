@@ -6829,3 +6829,7 @@ button.bg-dark:focus {
   .align-content-sm-around {
     align-content: space-around !important;
   }
+
+  .align-content-sm-stretch {
+    align-content: stretch !important;
+  }
