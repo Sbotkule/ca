@@ -6978,3 +6978,7 @@ button.bg-dark:focus {
   .align-self-md-start {
     align-self: flex-start !important;
   }
+
+  .align-self-md-end {
+    align-self: flex-end !important;
+  }
