@@ -4424,3 +4424,8 @@ input[type=button].btn-block {
   margin-left: -0.625rem;
   border-bottom: 0;
 }
+
+.card-header-pills {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
