@@ -3882,3 +3882,9 @@ input[type=button].btn-block {
 .custom-range:disabled::-ms-thumb {
   background-color: #adb5bd;
 }
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
