@@ -189,7 +189,7 @@ def viewMovement():
         products  = Product.query.order_by(Product.date_created).all()
         locations = Location.query.order_by(Location.date_created).all()
         movs = ProductMovement.query\
-        .join()Product, ProductMovement.product_id == Product.product_id)\
+        .join(Product, ProductMovement.product_id == Product.product_id)\
         .add_columns(
             ProductMovement.movement_id,
             ProductMovement.qty,
