@@ -7307,3 +7307,7 @@ button.bg-dark:focus {
     float: none !important;
   }
 }
+@media (min-width: 992px) {
+  .float-lg-left {
+    float: left !important;
+  }
