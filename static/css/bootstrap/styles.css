@@ -6676,3 +6676,7 @@ button.bg-dark:focus {
 .align-content-start {
   align-content: flex-start !important;
 }
+
+.align-content-end {
+  align-content: flex-end !important;
+}
