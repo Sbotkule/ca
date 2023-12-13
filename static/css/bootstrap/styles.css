@@ -7212,3 +7212,7 @@ button.bg-dark:focus {
   .align-items-xl-center {
     align-items: flex-center !important;
   }
+
+  .align-items-xl-baseline {
+    align-items: flex-baseline !important;
+  }
