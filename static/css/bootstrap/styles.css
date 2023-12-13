@@ -5386,3 +5386,7 @@ a.close.disabled {
 .modal-open {
   overflow: hidden;
 }
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
