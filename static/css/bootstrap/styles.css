@@ -4508,3 +4508,7 @@ input[type=button].btn-block {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+  .card-group > .card:not(:first-child) .card-img-top,
+.card-group > .card:not(:first-child) .card-header {
+    border-top-left-radius: 0;
+  }
