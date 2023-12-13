@@ -9667,3 +9667,9 @@ button.bg-dark:focus {
 .my-xl-auto {
     margin-bottom: auto !important;
   }
+
+  .ml-xl-auto,
+.mx-xl-auto {
+    margin-left: auto !important;
+  }
+}
