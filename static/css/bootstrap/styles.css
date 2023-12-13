@@ -4801,3 +4801,7 @@ a.badge-dark:hover, a.badge-dark:focus {
   color: #fff;
   background-color: #1d2124;
 }
+a.badge-dark:focus, a.badge-dark.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
