@@ -5365,3 +5365,6 @@ a.close.disabled {
   display: block;
   opacity: 1;
 }
+.toast.hide {
+  display: none;
+}
