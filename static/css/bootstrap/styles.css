@@ -5508,3 +5508,8 @@ a.close.disabled {
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
 }
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
