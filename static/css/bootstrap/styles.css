@@ -6392,3 +6392,7 @@ button.bg-dark:focus {
   .d-md-inline-block {
     display: inline-block !important;
   }
+
+  .d-md-block {
+    display: block !important;
+  }
