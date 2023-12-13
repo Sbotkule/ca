@@ -7916,3 +7916,7 @@ button.bg-dark:focus {
 .mx-n5 {
   margin-left: -3rem !important;
 }
+
+.m-auto {
+  margin: auto !important;
+}
