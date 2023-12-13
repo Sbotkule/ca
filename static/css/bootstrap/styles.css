@@ -4548,3 +4548,7 @@ input[type=button].btn-block {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.accordion > .card > .card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
