@@ -7204,3 +7204,7 @@ button.bg-dark:focus {
   .align-items-xl-start {
     align-items: flex-start !important;
   }
+
+  .align-items-xl-end {
+    align-items: flex-end !important;
+  }
