@@ -275,7 +275,7 @@ return render_template("product-balance.html", movement=balanceDict)
 
 @app.route("/movements/get-from-locations/", methods=["POST"])
 def getLocations():
-    product = request.from["productId"]
+    product = request.form["productId"]
     location = request.form["location"]
     locationDict = defaultdict(lambda: defaultdict(dict))
     locations = ProductsMovement.query.\
