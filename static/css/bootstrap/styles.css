@@ -8224,3 +8224,8 @@ button.bg-dark:focus {
 .py-sm-5 {
     padding-bottom: 3rem !important;
   }
+
+  .pl-sm-5,
+.px-sm-5 {
+    padding-left: 3rem !important;
+  }
