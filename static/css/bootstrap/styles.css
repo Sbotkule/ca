@@ -4784,3 +4784,7 @@ a.badge-danger:focus, a.badge-danger.focus {
   color: #212529;
   background-color: #f8f9fa;
 }
+a.badge-light:hover, a.badge-light:focus {
+  color: #212529;
+  background-color: #dae0e5;
+}
