@@ -5603,3 +5603,6 @@ a.close.disabled {
   word-wrap: break-word;
   opacity: 0;
 }
+.tooltip.show {
+  opacity: 0.9;
+}
