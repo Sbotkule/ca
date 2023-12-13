@@ -7911,3 +7911,8 @@ button.bg-dark:focus {
 .my-n5 {
   margin-bottom: -3rem !important;
 }
+
+.ml-n5,
+.mx-n5 {
+  margin-left: -3rem !important;
+}
