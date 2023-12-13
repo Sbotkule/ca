@@ -6204,3 +6204,7 @@ button.bg-dark:focus {
 .border-0 {
   border: 0 !important;
 }
+
+.border-top-0 {
+  border-top: 0 !important;
+}
