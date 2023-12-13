@@ -8691,5 +8691,15 @@ button.bg-dark:focus {
     margin: -0.5rem !important;
   }
 
+  .mt-md-n2,
+.my-md-n2 {
+    margin-top: -0.5rem !important;
+  }
+
+  .mr-md-n2,
+.mx-md-n2 {
+    margin-right: -0.5rem !important;
+  }
+
 
 
