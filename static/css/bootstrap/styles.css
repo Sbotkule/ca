@@ -7228,3 +7228,7 @@ button.bg-dark:focus {
   .align-content-xl-end {
     align-content: flex-end !important;
   }
+
+  .align-content-xl-center {
+    align-content: flex-center !important;
+  }
