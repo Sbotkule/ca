@@ -6342,3 +6342,8 @@ button.bg-dark:focus {
 .d-inline-flex {
   display: inline-flex !important;
 }
+
+@media (min-width: 576px) {
+  .d-sm-none {
+    display: none !important;
+  }
