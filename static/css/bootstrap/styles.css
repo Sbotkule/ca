@@ -6314,3 +6314,7 @@ button.bg-dark:focus {
 .d-inline {
   display: inline !important;
 }
+
+.d-inline-block {
+  display: inline-block !important;
+}
