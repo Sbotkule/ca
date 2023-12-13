@@ -6632,3 +6632,7 @@ button.bg-dark:focus {
 .flex-shrink-1 {
   flex-shrink: 1 !important;
 }
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
