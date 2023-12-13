@@ -6347,3 +6347,7 @@ button.bg-dark:focus {
   .d-sm-none {
     display: none !important;
   }
+
+  .d-sm-inline {
+    display: inline !important;
+  }
