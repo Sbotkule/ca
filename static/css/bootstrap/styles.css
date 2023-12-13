@@ -6890,3 +6890,7 @@ button.bg-dark:focus {
   .flex-md-fill {
     flex: 1 1 auto !important;
   }
+
+  .flex-md-grow-0 {
+    flex-grow: 0 !important;
+  }
