@@ -8426,3 +8426,8 @@ button.bg-dark:focus {
   .m-md-2 {
     margin: 0.5rem !important;
   }
+
+  .mt-md-2,
+.my-md-2 {
+    margin-top: 0.5rem !important;
+  }
