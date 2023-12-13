@@ -10094,3 +10094,7 @@ body {
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content {
     margin-left: -225px;
   }
+  .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before {
+    display: none;
+  }
+}
