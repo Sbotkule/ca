@@ -9480,3 +9480,12 @@ button.bg-dark:focus {
 .px-xl-3 {
     padding-left: 1rem !important;
   }
+
+  .p-xl-4 {
+    padding: 1.5rem !important;
+  }
+
+  .pt-xl-4,
+.py-xl-4 {
+    padding-top: 1.5rem !important;
+  }
