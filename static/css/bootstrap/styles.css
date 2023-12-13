@@ -6801,3 +6801,7 @@ button.bg-dark:focus {
   .align-items-sm-center {
     align-items: center !important;
   }
+
+  .align-items-sm-baseline {
+    align-items: baseline !important;
+  }
