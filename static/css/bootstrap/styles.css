@@ -5651,3 +5651,8 @@ a.close.disabled {
 .bs-tooltip-bottom .arrow, .bs-tooltip-auto[x-placement^=bottom] .arrow {
   top: 0;
 }
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^=bottom] .arrow::before {
+  bottom: 0;
+  border-width: 0 0.4rem 0.4rem;
+  border-bottom-color: #000;
+}
