@@ -6003,3 +6003,9 @@ a.close.disabled {
   color: #fff;
   text-align: center;
 }
+
+@-webkit-keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
