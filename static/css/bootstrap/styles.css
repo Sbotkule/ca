@@ -10231,3 +10231,7 @@ body {
 .sb-sidenav-dark .sb-sidenav-footer {
   background-color: #343a40;
 }
+.sb-sidenav-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
