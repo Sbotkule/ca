@@ -5073,3 +5073,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   margin-top: -1px;
   border-top-width: 1px;
 }
+
+.list-group-horizontal {
+  flex-direction: row;
+}
