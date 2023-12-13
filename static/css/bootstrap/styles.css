@@ -7527,3 +7527,8 @@ button.bg-dark:focus {
 .my-0 {
   margin-bottom: 0 !important;
 }
+
+.ml-0,
+.mx-0 {
+  margin-left: 0 !important;
+}
