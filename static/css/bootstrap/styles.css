@@ -7796,3 +7796,12 @@ button.bg-dark:focus {
 .px-5 {
   padding-left: 3rem !important;
 }
+
+.m-n1 {
+  margin: -0.25rem !important;
+}
+
+.mt-n1,
+.my-n1 {
+  margin-top: -0.25rem !important;
+}
