@@ -10166,3 +10166,7 @@ body {
 .sb-sidenav .sb-sidenav-menu {
   flex-grow: 1;
 }
+.sb-sidenav .sb-sidenav-menu .nav {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
