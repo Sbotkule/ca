@@ -9834,3 +9834,7 @@ a.text-secondary:hover, a.text-secondary:focus {
 a.text-success:hover, a.text-success:focus {
   color: #19692c !important;
 }
+
+.text-info {
+  color: #17a2b8 !important;
+}
