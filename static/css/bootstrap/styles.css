@@ -7256,3 +7256,7 @@ button.bg-dark:focus {
   .align-self-xl-end {
     align-self: flex-end !important;
   }
+
+  .align-self-xl-center {
+    align-self: center !important;
+  }
