@@ -7738,3 +7738,8 @@ button.bg-dark:focus {
 .px-3 {
   padding-right: 1rem !important;
 }
+
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
