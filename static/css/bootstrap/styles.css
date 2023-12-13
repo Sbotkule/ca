@@ -4727,3 +4727,8 @@ a.badge-secondary:focus, a.badge-secondary.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
+
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
