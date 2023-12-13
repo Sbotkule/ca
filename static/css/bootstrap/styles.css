@@ -5361,3 +5361,7 @@ a.close.disabled {
 .toast.showing {
   opacity: 1;
 }
+.toast.show {
+  display: block;
+  opacity: 1;
+}
