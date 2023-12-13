@@ -6421,3 +6421,7 @@ button.bg-dark:focus {
   .d-lg-none {
     display: none !important;
   }
+
+  .d-lg-inline {
+    display: inline !important;
+  }
