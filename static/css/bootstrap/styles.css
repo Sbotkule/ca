@@ -10013,3 +10013,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html,
+body {
+  height: 100%;
+}
