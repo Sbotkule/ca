@@ -174,13 +174,13 @@ def viewMovement():
     if request.method == "POST" :
         product_id      = request.form["productID"]
         qty             = request.form["qty"]
-        fromLocation    = request.form["fromLocation"]
-        toLocation      = request.form["tolocation"]
+        from_Location    = request.form["fromLocation"]
+        to_Location      = request.form["tolocation"]
         new_movement    = ProductMovement(
-           product_id=product_id, qty=qty, from_location=fromlocation, to_location=toLocation)
+           product_id=product_id, qty=qty, from_location=from_location, to_location=to_Location)
 
         try:
-            db.session.add(new.movement)
+            db.session.add(new_movement)
             db.session.commit()
             return redirect("/movements/")
 
@@ -189,7 +189,7 @@ def viewMovement():
     else:
         products  = Product.query.order_by(Product.date_created).all()
         locations = Location.query.order_by(Location.date_created).all()
-        movs = ProductMovement.query\
+        movements = ProductMovement.query\
         .join(Product, ProductMovement.product_id == Product.product_id)\
         .add_columns(
             ProductMovement.movement_id,
@@ -200,9 +200,9 @@ def viewMovement():
             ProductMovement.movement_time)\
         .all()
 
-        movements   = productMovement.query.order_by(
+        movements   = ProductMovement.query.order_by(
             ProductMovement.movement_time).all()
-        return render_template("movements.html", movements=movs, products=products, locations=locations)
+        return render_template("movements.html", movements=movements, products=products, locations=locations)
 
 @app.route("/update-movement/<int:id>", methods=["POST", "GET"])
 def updateMovement(id):
@@ -255,22 +255,22 @@ def productBalanceReport():
     for mov in movs:
         row = mov[0]
         if(tempProduct == row.product_id):
-            if(row.to_location and not "qty" in balancedDict[row.product_id][row.to_location]):
-                balancedDict[row.product_id][row.to_location]["qty"] = 0
-            elif (row.from_location and not "qty" in balancedict[row.product_id][row.from_location]):
-                balancedDict[row.product_id][row.from_location]["qty"] = 0 
+            if(row.to_location and not "qty" in balanceDict[row.product_id][row.to_location]):
+                balanceDict[row.product_id][row.to_location]["qty"] = 0
+            elif (row.from_location and not "qty" in balanceDict[row.product_id][row.from_location]):
+                balanceDict[row.product_id][row.from_location]["qty"] = 0 
             if (row.to_location and "qty" in balanceDict[row.product_id][row.to_location]):
-                balancedDict[row.product_id][row.to_location]["qty"] += row.qty
+                balanceDict[row.product_id][row.to_location]["qty"] += row.qty
             if (row.from_location and "qty" in balanceDict[row.product_id][row.from_location]):
-                balancedDict[row.product_id][row.from_location]["qty"] -= row.qty
+                balanceDict[row.product_id][row.from_location]["qty"] -= row.qty
             pass
         else :
             tempProduct = row.product_id
             if(row.to_location and not row.from_location):
-                if(balancedDict):
-                    balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+                if(balanceDict):
+                    balanceDict[row.product_id][row.to_location]["qty"] = row.qty
                 else:
-                    balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+                    balanceDict[row.product_id][row.to_location]["qty"] = row.qty
 
     return render_template("product-balance.html", movements=balanceDict)
 
