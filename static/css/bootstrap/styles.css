@@ -7829,3 +7829,8 @@ button.bg-dark:focus {
 .my-n2 {
   margin-top: -0.5rem !important;
 }
+
+.mr-n2,
+.mx-n2 {
+  margin-right: -0.5rem !important;
+}
