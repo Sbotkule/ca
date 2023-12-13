@@ -7373,3 +7373,7 @@ button.bg-dark:focus {
 .position-absolute {
   position: absolute !important;
 }
+
+.position-fixed {
+  position: fixed !important;
+}
