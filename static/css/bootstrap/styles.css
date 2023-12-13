@@ -4118,3 +4118,6 @@ input[type=button].btn-block {
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
   }
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
