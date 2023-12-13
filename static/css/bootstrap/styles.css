@@ -8802,6 +8802,12 @@ button.bg-dark:focus {
     margin-bottom: auto !important;
   }
 
+  .ml-md-auto,
+.mx-md-auto {
+    margin-left: auto !important;
+  }
+}
+
 
 
 
