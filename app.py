@@ -36,9 +36,9 @@ class ProductMovement(db.Model):
     to_location = db.Column(db.String(200), db.ForeignKey('locations.location_id'))
     movement_time = db.Column(db.DateTime, default=datetime.utcnow)
 
-    product = db.relationship('Product', foreign_keys=product_id)
-    fromLoc = db.relationship('Location', foreign_keys=from_location)
-    toLoc = db.relationship('Location', foreign_keys=to_location)
+    product = db.relationship('Product', foreign_keys=[product_id])
+    fromLoc = db.relationship('Location', foreign_keys=[from_location])
+    toLoc = db.relationship('Location', foreign_keys=[to_location])
 
     def __repr__(self):
         return '<ProductMovement %r>' % self.movement_id
