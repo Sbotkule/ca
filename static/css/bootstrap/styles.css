@@ -9600,3 +9600,12 @@ button.bg-dark:focus {
 .mx-xl-n3 {
     margin-left: -1rem !important;
   }
+
+  .m-xl-n4 {
+    margin: -1.5rem !important;
+  }
+
+  .mt-xl-n4,
+.my-xl-n4 {
+    margin-top: -1.5rem !important;
+  }
