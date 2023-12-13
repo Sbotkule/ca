@@ -5881,3 +5881,9 @@ a.close.disabled {
   transition-property: opacity;
   transform: none;
 }
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  z-index: 1;
+  opacity: 1;
+}
