@@ -6535,3 +6535,7 @@ button.bg-dark:focus {
   padding: 0;
   overflow: hidden;
 }
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
