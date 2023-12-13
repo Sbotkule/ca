@@ -6359,3 +6359,7 @@ button.bg-dark:focus {
   .d-sm-block {
     display: block !important;
   }
+
+  .d-sm-table {
+    display: table !important;
+  }
