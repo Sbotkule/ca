@@ -6200,3 +6200,7 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #dee2e6 !important;
 }
+
+.border-0 {
+  border: 0 !important;
+}
