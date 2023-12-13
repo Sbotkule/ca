@@ -7071,3 +7071,7 @@ button.bg-dark:focus {
   .align-items-lg-end {
     align-items: flex-end !important;
   }
+
+  .align-items-lg-center {
+    align-items: flex-center !important;
+  }
