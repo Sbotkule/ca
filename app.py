@@ -199,9 +199,9 @@ def viewMovement():
             ProductMovement.movement_time)\
         .all()
 
-  movements  = productMovement.query.order_by(
-    ProductMovement.movement_time).all()
-  return render_template("movements.html", movements=movs, products=products, locations=locations)
+        movements   = productMovement.query.order_by(
+            ProductMovement.movement_time).all()
+        return render_template("movements.html", movements=movs, products=products, locations=locations)
 
 @app.route("/update-movement/<int:id>", methods=["POST", "GET"])
 def updateMovement(id):
