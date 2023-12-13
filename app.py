@@ -105,9 +105,9 @@ def viewProduct():
         except:
               products = Product.query.order_by(Product.date_createde).all()
               return "Error occured"
-      else:
-           products = product.query.order_by(Product.date_created).all()
-           return render_template("products.html", products=products)
+    else:
+        products = product.query.order_by(Product.date_created).all()
+        return render_template("products.html", products=products)
 
 @app.route("/update-product/<name>", methods=["POST", "GET"])
 def updateProduct(name):
