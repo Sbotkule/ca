@@ -3870,3 +3870,6 @@ input[type=button].btn-block {
 .custom-range:disabled::-webkit-slider-thumb {
   background-color: #adb5bd;
 }
+.custom-range:disabled::-webkit-slider-runnable-track {
+  cursor: default;
+}
