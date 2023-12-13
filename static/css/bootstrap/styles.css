@@ -10001,3 +10001,10 @@ h3 {
   .table-dark {
     color: inherit;
   }
+  
+  .table-dark th,
+.table-dark td,
+.table-dark thead th,
+.table-dark tbody + tbody {
+    border-color: #dee2e6;
+  }
