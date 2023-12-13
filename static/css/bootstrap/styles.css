@@ -8624,3 +8624,8 @@ button.bg-dark:focus {
     padding-top: 1.5rem !important;
   }
 
+  .pr-md-4,
+.px-md-4 {
+    padding-right: 1.5rem !important;
+  }
+
