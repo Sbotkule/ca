@@ -10257,3 +10257,6 @@ body {
 .sb-sidenav-light .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
   color: #007bff;
 }
+.sb-sidenav-light .sb-sidenav-footer {
+  background-color: #e9ecef;
+}
