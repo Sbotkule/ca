@@ -6009,3 +6009,9 @@ a.close.disabled {
     transform: rotate(360deg);
   }
 }
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
