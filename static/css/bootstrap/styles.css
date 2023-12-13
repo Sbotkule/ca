@@ -4779,3 +4779,8 @@ a.badge-danger:focus, a.badge-danger.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
+
+.badge-light {
+  color: #212529;
+  background-color: #f8f9fa;
+}
