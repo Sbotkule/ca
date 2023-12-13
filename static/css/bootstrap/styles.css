@@ -9938,3 +9938,9 @@ a.text-dark:hover, a.text-dark:focus {
   pre {
     white-space: pre-wrap !important;
   }
+
+  pre,
+blockquote {
+    border: 1px solid #adb5bd;
+    page-break-inside: avoid;
+  }
