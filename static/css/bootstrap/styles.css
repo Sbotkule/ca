@@ -4695,3 +4695,9 @@ a.badge:hover, a.badge:focus {
   position: relative;
   top: -1px;
 }
+
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
