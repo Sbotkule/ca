@@ -6063,3 +6063,8 @@ a.close.disabled {
   -webkit-animation: spinner-grow 0.75s linear infinite;
           animation: spinner-grow 0.75s linear infinite;
 }
+
+.spinner-grow-sm {
+  width: 1rem;
+  height: 1rem;
+}
