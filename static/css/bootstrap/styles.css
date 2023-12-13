@@ -7091,3 +7091,7 @@ button.bg-dark:focus {
   .align-content-lg-end {
     align-content: flex-end !important;
   }
+
+  .align-content-lg-center {
+    align-content: flex-center !important;
+  }
