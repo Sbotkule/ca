@@ -6220,3 +6220,7 @@ button.bg-dark:focus {
 .border-left-0 {
   border-left: 0 !important;
 }
+
+.border-primary {
+  border-color: #007bff !important;
+}
