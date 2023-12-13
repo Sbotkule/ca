@@ -5715,3 +5715,10 @@ a.close.disabled {
   height: 0.5rem;
   margin: 0 0.3rem;
 }
+.popover .arrow::before, .popover .arrow::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
