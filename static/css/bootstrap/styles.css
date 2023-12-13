@@ -6441,3 +6441,7 @@ button.bg-dark:focus {
   .d-lg-table-row {
     display: table-row !important;
   }
+
+  .d-lg-table-cell {
+    display: table-cell !important;
+  }
