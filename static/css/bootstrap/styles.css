@@ -7382,3 +7382,11 @@ button.bg-dark:focus {
   position: -webkit-sticky !important;
   position: sticky !important;
 }
+
+.fixed-top, .sb-nav-fixed #layoutSidenav #layoutSidenav_nav, .sb-nav-fixed .sb-topnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
