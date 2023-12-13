@@ -8349,3 +8349,12 @@ button.bg-dark:focus {
 .mx-sm-n5 {
     margin-left: -3rem !important;
   }
+
+  .m-sm-auto {
+    margin: auto !important;
+  }
+
+  .mt-sm-auto,
+.my-sm-auto {
+    margin-top: auto !important;
+  }
