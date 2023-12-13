@@ -6503,3 +6503,7 @@ button.bg-dark:focus {
   .d-print-inline {
     display: inline !important;
   }
+
+  .d-print-block {
+    display: block !important;
+  }
