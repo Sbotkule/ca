@@ -9652,3 +9652,9 @@ button.bg-dark:focus {
   .m-xl-auto {
     margin: auto !important;
   }
+
+  .mt-xl-auto,
+.my-xl-auto {
+    margin-top: auto !important;
+  }
+
