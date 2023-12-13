@@ -6995,3 +6995,7 @@ button.bg-dark:focus {
     align-self: baseline !important;
   }
 }
+@media (min-width: 992px) {
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
