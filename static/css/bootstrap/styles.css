@@ -5454,3 +5454,8 @@ a.close.disabled {
   height: min-content;
   content: "";
 }
+.modal-dialog-centered.modal-dialog-scrollable {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
