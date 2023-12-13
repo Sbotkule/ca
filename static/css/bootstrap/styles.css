@@ -6793,3 +6793,7 @@ button.bg-dark:focus {
   .align-items-sm-start {
     align-items: flex-start !important;
   }
+
+  .align-items-sm-end {
+    align-items: flex-end !important;
+  }
