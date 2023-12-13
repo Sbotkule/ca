@@ -3862,3 +3862,8 @@ input[type=button].btn-block {
   background-color: #dee2e6;
   border-radius: 1rem;
 }
+.custom-range::-ms-fill-upper {
+  margin-right: 15px;
+  background-color: #dee2e6;
+  border-radius: 1rem;
+}
