@@ -3873,3 +3873,6 @@ input[type=button].btn-block {
 .custom-range:disabled::-webkit-slider-runnable-track {
   cursor: default;
 }
+.custom-range:disabled::-moz-range-thumb {
+  background-color: #adb5bd;
+}
