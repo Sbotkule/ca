@@ -7264,3 +7264,8 @@ button.bg-dark:focus {
   .align-self-xl-baseline {
     align-self: baseline !important;
   }
+
+  .align-self-xl-stretch {
+    align-self: stretch !important;
+  }
+}
