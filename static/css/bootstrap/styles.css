@@ -5564,3 +5564,8 @@ a.close.disabled {
     height: -moz-min-content;
     height: min-content;
   }
+
+  .modal-sm {
+    max-width: 300px;
+  }
+}
