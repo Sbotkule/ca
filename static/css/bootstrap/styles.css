@@ -6180,3 +6180,7 @@ button.bg-dark:focus {
 .bg-transparent {
   background-color: transparent !important;
 }
+
+.border {
+  border: 1px solid #dee2e6 !important;
+}
