@@ -7216,3 +7216,7 @@ button.bg-dark:focus {
   .align-items-xl-baseline {
     align-items: flex-baseline !important;
   }
+
+  .align-items-xl-stretch {
+    align-items: flex-stretch !important;
+  }
