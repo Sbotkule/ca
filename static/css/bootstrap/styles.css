@@ -10228,3 +10228,6 @@ body {
 .sb-sidenav-dark .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
   color: #fff;
 }
+.sb-sidenav-dark .sb-sidenav-footer {
+  background-color: #343a40;
+}
