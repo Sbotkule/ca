@@ -6906,3 +6906,7 @@ button.bg-dark:focus {
   .flex-md-shrink-1 {
     flex-shrink: 1 !important;
   }
+
+  .justify-content-md-start {
+    justify-content: flex-start !important;
+  }
