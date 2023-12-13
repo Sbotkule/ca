@@ -3846,3 +3846,6 @@ input[type=button].btn-block {
     transition: none;
   }
 }
+.custom-range::-ms-thumb:active {
+  background-color: #b3d7ff;
+}
