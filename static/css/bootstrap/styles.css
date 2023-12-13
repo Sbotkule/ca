@@ -6825,3 +6825,7 @@ button.bg-dark:focus {
   .align-content-sm-between {
     align-content: space-between !important;
   }
+
+  .align-content-sm-around {
+    align-content: space-around !important;
+  }
