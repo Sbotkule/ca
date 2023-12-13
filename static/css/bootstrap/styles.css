@@ -6072,3 +6072,7 @@ a.close.disabled {
 .align-baseline {
   vertical-align: baseline !important;
 }
+
+.align-top {
+  vertical-align: top !important;
+}
