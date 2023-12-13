@@ -4355,3 +4355,7 @@ input[type=button].btn-block {
   margin-right: 0;
   margin-left: 0;
 }
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
