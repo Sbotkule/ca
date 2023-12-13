@@ -6696,3 +6696,7 @@ button.bg-dark:focus {
 .align-content-stretch {
   align-content: stretch !important;
 }
+
+.align-self-auto {
+  align-self: auto !important;
+}
