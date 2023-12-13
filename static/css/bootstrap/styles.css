@@ -9766,3 +9766,8 @@ button.bg-dark:focus {
   .text-xl-right {
     text-align: right !important;
   }
+
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
