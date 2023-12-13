@@ -6112,3 +6112,7 @@ button.bg-secondary:hover,
 button.bg-secondary:focus {
   background-color: #545b62 !important;
 }
+
+.bg-success {
+  background-color: #28a745 !important;
+}
