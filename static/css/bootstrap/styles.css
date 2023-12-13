@@ -8817,6 +8817,11 @@ button.bg-dark:focus {
     margin-top: 0 !important;
   }
 
+  .mr-lg-0,
+.mx-lg-0 {
+    margin-right: 0 !important;
+  }
+
 
 
 
