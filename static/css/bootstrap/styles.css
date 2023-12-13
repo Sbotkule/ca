@@ -7974,3 +7974,8 @@ button.bg-dark:focus {
 .my-sm-1 {
     margin-top: 0.25rem !important;
   }
+
+  .mr-sm-1,
+.mx-sm-1 {
+    margin-right: 0.25rem !important;
+  }
