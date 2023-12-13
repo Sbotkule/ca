@@ -3867,3 +3867,6 @@ input[type=button].btn-block {
   background-color: #dee2e6;
   border-radius: 1rem;
 }
+.custom-range:disabled::-webkit-slider-thumb {
+  background-color: #adb5bd;
+}
