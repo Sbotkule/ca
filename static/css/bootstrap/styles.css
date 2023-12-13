@@ -9926,3 +9926,7 @@ a.text-dark:hover, a.text-dark:focus {
     text-shadow: none !important;
     box-shadow: none !important;
   }
+
+  a:not(.btn) {
+    text-decoration: underline;
+  }
