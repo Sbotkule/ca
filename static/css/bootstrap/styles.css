@@ -4562,3 +4562,7 @@ input[type=button].btn-block {
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
+
+.breadcrumb-item {
+  display: flex;
+}
