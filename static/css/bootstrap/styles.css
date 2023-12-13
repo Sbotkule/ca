@@ -6032,3 +6032,13 @@ a.close.disabled {
   height: 1rem;
   border-width: 0.2em;
 }
+
+@-webkit-keyframes spinner-grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
