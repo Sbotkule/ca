@@ -5618,3 +5618,7 @@ a.close.disabled {
   border-color: transparent;
   border-style: solid;
 }
+
+.bs-tooltip-top, .bs-tooltip-auto[x-placement^=top] {
+  padding: 0.4rem 0;
+}
