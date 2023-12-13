@@ -6926,3 +6926,7 @@ button.bg-dark:focus {
   .justify-content-md-around {
     justify-content: space-around !important;
   }
+
+  .align-items-md-start {
+    align-items: flex-start !important;
+  }
