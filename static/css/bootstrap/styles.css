@@ -4753,3 +4753,8 @@ a.badge-info:focus, a.badge-info.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
+
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
