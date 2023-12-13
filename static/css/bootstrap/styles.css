@@ -9858,3 +9858,7 @@ a.text-warning:hover, a.text-warning:focus {
 a.text-danger:hover, a.text-danger:focus {
   color: #a71d2a !important;
 }
+
+.text-light {
+  color: #f8f9fa !important;
+}
