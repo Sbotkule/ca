@@ -5314,3 +5314,13 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #1b1e21;
   border-color: #1b1e21;
 }
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
