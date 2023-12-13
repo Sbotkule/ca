@@ -8238,3 +8238,8 @@ button.bg-dark:focus {
 .my-sm-n1 {
     margin-top: -0.25rem !important;
   }
+
+  .mr-sm-n1,
+.mx-sm-n1 {
+    margin-right: -0.25rem !important;
+  }
