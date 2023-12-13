@@ -9168,4 +9168,13 @@ button.bg-dark:focus {
     margin-left: -1rem !important;
   }
 
+  .m-lg-n4 {
+    margin: -1.5rem !important;
+  }
+
+  .mt-lg-n4,
+.my-lg-n4 {
+    margin-top: -1.5rem !important;
+  }
+
 
