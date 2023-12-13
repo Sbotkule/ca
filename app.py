@@ -168,7 +168,7 @@ def deleteLocation(id):
     except:
         return "Error occured"
 
-@app.route("/movements/", methods=["POST", ["GET"])
+@app.route("/movements/", methods=["POST", "GET"])
 def viewMovement():
   if request.method == "POST" :
      product_id      = request.form["productID"]
