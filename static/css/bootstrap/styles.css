@@ -9393,3 +9393,8 @@ button.bg-dark:focus {
 .py-xl-0 {
     padding-top: 0 !important;
   }
+
+  .pr-xl-0,
+.px-xl-0 {
+    padding-right: 0 !important;
+  }
