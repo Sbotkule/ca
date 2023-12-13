@@ -6805,3 +6805,7 @@ button.bg-dark:focus {
   .align-items-sm-baseline {
     align-items: baseline !important;
   }
+
+  .align-items-sm-stretch {
+    align-items: stretch !important;
+  }
