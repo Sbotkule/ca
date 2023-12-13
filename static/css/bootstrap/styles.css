@@ -7324,3 +7324,12 @@ button.bg-dark:focus {
   .float-xl-left {
     float: left !important;
   }
+
+  .float-xl-right {
+    float: right !important;
+  }
+
+  .float-xl-none {
+    float: none !important;
+  }
+}
