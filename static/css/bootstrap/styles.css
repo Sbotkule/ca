@@ -6954,3 +6954,7 @@ button.bg-dark:focus {
   .align-content-md-end {
     align-content: flex-end !important;
   }
+
+  .align-content-md-center {
+    align-content: center !important;
+  }
