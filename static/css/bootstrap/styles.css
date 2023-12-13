@@ -7075,3 +7075,7 @@ button.bg-dark:focus {
   .align-items-lg-center {
     align-items: flex-center !important;
   }
+
+  .align-items-lg-baseline {
+    align-items: flex-baseline !important;
+  }
