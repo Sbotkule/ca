@@ -120,7 +120,7 @@ def updateProduct(name):
 
         try:
             db.session.commit()
-            updateProductInMovemnets(old_product, request.form['product_name'])
+            updateProductInMovements(old_product, request.form['product_name'])
             return redirect("/products/")
 
         except:
