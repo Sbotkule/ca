@@ -6716,3 +6716,7 @@ button.bg-dark:focus {
 .align-self-baseline {
   align-self: baseline !important;
 }
+
+.align-self-stretch {
+  align-self: stretch !important;
+}
