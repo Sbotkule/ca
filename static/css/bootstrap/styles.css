@@ -8407,3 +8407,8 @@ button.bg-dark:focus {
 .my-md-1 {
     margin-top: 0.25rem !important;
   }
+
+  .mr-md-1,
+.mx-md-1 {
+    margin-right: 0.25rem !important;
+  }
