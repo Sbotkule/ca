@@ -4194,3 +4194,8 @@ input[type=button].btn-block {
     padding-left: 0;
   }
 }
+@media (min-width: 1200px) {
+  .navbar-expand-xl {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
