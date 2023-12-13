@@ -9427,3 +9427,8 @@ button.bg-dark:focus {
 .py-xl-1 {
     padding-bottom: 0.25rem !important;
   }
+
+  .pl-xl-1,
+.px-xl-1 {
+    padding-left: 0.25rem !important;
+  }
