@@ -4736,3 +4736,7 @@ a.badge-success:hover, a.badge-success:focus {
   color: #fff;
   background-color: #1e7e34;
 }
+a.badge-success:focus, a.badge-success.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
