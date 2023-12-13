@@ -5459,3 +5459,6 @@ a.close.disabled {
   justify-content: center;
   height: 100%;
 }
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+  max-height: none;
+}
