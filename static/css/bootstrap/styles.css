@@ -5824,3 +5824,7 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   color: #212529;
 }
+
+.carousel {
+  position: relative;
+}
