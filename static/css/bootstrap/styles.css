@@ -10061,3 +10061,7 @@ body {
   min-height: calc(100vh - 56px);
   margin-left: -225px;
 }
+
+.sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
+  transform: translateX(0);
+}
