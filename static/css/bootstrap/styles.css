@@ -9753,3 +9753,7 @@ button.bg-dark:focus {
   .text-lg-right {
     text-align: right !important;
   }
+
+  .text-lg-center {
+    text-align: center !important;
+  }
