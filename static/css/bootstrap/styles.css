@@ -5806,3 +5806,13 @@ a.close.disabled {
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-left-color: #fff;
 }
+
+.popover-header {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
