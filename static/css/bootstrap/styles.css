@@ -6256,3 +6256,7 @@ button.bg-dark:focus {
 .border-white {
   border-color: #fff !important;
 }
+
+.rounded-sm {
+  border-radius: 0.2rem !important;
+}
