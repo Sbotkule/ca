@@ -6528,3 +6528,10 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
