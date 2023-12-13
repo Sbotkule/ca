@@ -3858,3 +3858,7 @@ input[type=button].btn-block {
   border-color: transparent;
   border-width: 0.5rem;
 }
+.custom-range::-ms-fill-lower {
+  background-color: #dee2e6;
+  border-radius: 1rem;
+}
