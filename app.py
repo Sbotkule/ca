@@ -285,11 +285,11 @@ def getLocations():
         add_columns(ProductMovement.from_location, ProductMovement.to_location, ProductMovement.qty).\
         all()
 
-    for key, row in enumerate(location):
+    for key, row in enumerate(locations):
         if(locationDict[row.to_location] and locationDict[row.to_location]["qty"]):
             locationDict[row.to_location]["qty"] += row.qty
         else:
-            locationDict[row.to_loaction]["qty"] = row.qty
+            locationDict[row.to_location]["qty"] = row.qty
 
     return locationDict
 
