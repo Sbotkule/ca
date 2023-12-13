@@ -6396,3 +6396,7 @@ button.bg-dark:focus {
   .d-md-block {
     display: block !important;
   }
+
+  .d-md-table {
+    display: table !important;
+  }
