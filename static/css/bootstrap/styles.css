@@ -6326,3 +6326,7 @@ button.bg-dark:focus {
 .d-table {
   display: table !important;
 }
+
+.d-table-row {
+  display: table-row !important;
+}
