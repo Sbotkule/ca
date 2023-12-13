@@ -6866,3 +6866,7 @@ button.bg-dark:focus {
   .flex-md-column {
     flex-direction: column !important;
   }
+
+  .flex-md-row-reverse {
+    flex-direction: row-reverse !important;
+  }
