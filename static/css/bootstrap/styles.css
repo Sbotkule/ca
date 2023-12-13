@@ -4500,3 +4500,7 @@ input[type=button].btn-block {
 .card-group > .card:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
+  .card-group > .card:not(:last-child) .card-img-bottom,
+.card-group > .card:not(:last-child) .card-footer {
+    border-bottom-right-radius: 0;
+  }
