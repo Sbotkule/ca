@@ -3786,3 +3786,6 @@ input[type=button].btn-block {
     transition: none;
   }
 }
+.custom-range::-webkit-slider-thumb:active {
+  background-color: #b3d7ff;
+}
