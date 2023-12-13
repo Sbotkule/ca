@@ -9997,3 +9997,7 @@ h3 {
 .table-bordered td {
     border: 1px solid #dee2e6 !important;
   }
+
+  .table-dark {
+    color: inherit;
+  }
