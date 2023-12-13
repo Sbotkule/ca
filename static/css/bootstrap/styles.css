@@ -8262,3 +8262,8 @@ button.bg-dark:focus {
 .my-sm-n2 {
     margin-top: -0.5rem !important;
   }
+
+  .mr-sm-n2,
+.mx-sm-n2 {
+    margin-right: -0.5rem !important;
+  }
