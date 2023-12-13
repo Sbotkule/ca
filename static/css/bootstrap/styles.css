@@ -7642,3 +7642,8 @@ button.bg-dark:focus {
 .mx-5 {
   margin-right: 3rem !important;
 }
+
+.mb-5,
+.my-5 {
+  margin-bottom: 3rem !important;
+}
