@@ -6777,3 +6777,7 @@ button.bg-dark:focus {
   .justify-content-sm-end {
     justify-content: flex-end !important;
   }
+
+  .justify-content-sm-center {
+    justify-content: center !important;
+  }
