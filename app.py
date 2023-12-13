@@ -240,7 +240,7 @@ def deleteMovement(id):
 @app.route("/product-balance/", methods=["POST", "GET"])
 def productBalanceReport():
     movs = ProductMovement.query.\
-        join(Product, ProductMovement.product_id == Products.product_id).\
+        join(Product, ProductMovement.product_id == Product.product_id).\
         add_columns(
             Product.product_id,
             ProductMovement.qty,
@@ -279,24 +279,24 @@ def getLocations():
     product = request.form["productId"]
     location = request.form["location"]
     locationDict = defaultdict(lambda: defaultdict(dict))
-    locations = ProductsMovement.query.\
+    locations = ProductMovement.query.\
         filter(ProductMovement.product_id == product).\
         filter(ProductMovement.to_location != '').\
         add_columns(ProductMovement.from_location, ProductMovement.to_location, ProductMovement.qty).\
         all()
 
-    for key, location in enumerate(location):
-        if(locationDict[location.to_location] and locationDict[location.to_location]["qty"]):
-            locationDict[location.to_location]["qty"] += location.qty
+    for key, row in enumerate(location):
+        if(locationDict[row.to_location] and locationDict[row.to_location]["qty"]):
+            locationDict[row.to_location]["qty"] += row.qty
         else:
-            locationDict[location.to_loaction]["qty"] = location.qty
+            locationDict[row.to_loaction]["qty"] = row.qty
 
     return locationDict
 
 
 @app.route("/dub-location/", methods=["POST", "GET"])
 def getDuplicate():
-    location = location.form["location"]
+    location = request.form["location"]
     locations = Location.query.\
         filter(Location.location_id == location).\
         all()
@@ -309,7 +309,7 @@ def getDuplicate():
 @app.route("/dub-products/", methods=["POST", "GET"])
 def getPDublicate():
     product_name = request.form["product_name"]
-    products = Products.query.\
+    products = Product.query.\
         filter(Product.product_id == product_name).\
         all()
     print(products)
