@@ -4336,3 +4336,6 @@ input[type=button].btn-block {
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5);
 }
+.navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
+  color: #fff;
+}
