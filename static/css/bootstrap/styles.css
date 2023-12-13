@@ -3879,3 +3879,6 @@ input[type=button].btn-block {
 .custom-range:disabled::-moz-range-track {
   cursor: default;
 }
+.custom-range:disabled::-ms-thumb {
+  background-color: #adb5bd;
+}
