@@ -9906,3 +9906,7 @@ a.text-dark:hover, a.text-dark:focus {
 .text-break {
   word-wrap: break-word !important;
 }
+
+.text-reset {
+  color: inherit !important;
+}
