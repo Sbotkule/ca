@@ -6704,3 +6704,7 @@ button.bg-dark:focus {
 .align-self-start {
   align-self: flex-start !important;
 }
+
+.align-self-end {
+  align-self: flex-end !important;
+}
