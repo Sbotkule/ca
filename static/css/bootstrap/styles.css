@@ -3928,3 +3928,6 @@ input[type=button].btn-block {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
