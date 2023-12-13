@@ -9456,3 +9456,12 @@ button.bg-dark:focus {
 .px-xl-2 {
     padding-left: 0.5rem !important;
   }
+
+  .p-xl-3 {
+    padding: 1rem !important;
+  }
+
+  .pt-xl-3,
+.py-xl-3 {
+    padding-top: 1rem !important;
+  }
