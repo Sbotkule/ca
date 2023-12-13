@@ -6351,3 +6351,7 @@ button.bg-dark:focus {
   .d-sm-inline {
     display: inline !important;
   }
+
+  .d-sm-inline-block {
+    display: inline-block !important;
+  }
