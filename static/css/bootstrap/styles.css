@@ -4221,3 +4221,7 @@ input[type=button].btn-block {
     display: flex !important;
     flex-basis: auto;
   }
+  .navbar-expand-xl .navbar-toggler {
+    display: none;
+  }
+}
