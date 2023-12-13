@@ -6507,3 +6507,7 @@ button.bg-dark:focus {
   .d-print-block {
     display: block !important;
   }
+
+  .d-print-table {
+    display: table !important;
+  }
