@@ -6568,3 +6568,7 @@ button.bg-dark:focus {
 .embed-responsive-1by1::before {
   padding-top: 100%;
 }
+
+.embed-responsive-21by9::before {
+  padding-top: 42.8571428571%;
+}
