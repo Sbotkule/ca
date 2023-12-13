@@ -5569,3 +5569,9 @@ a.close.disabled {
     max-width: 300px;
   }
 }
+@media (min-width: 992px) {
+  .modal-lg,
+.modal-xl {
+    max-width: 800px;
+  }
+}
