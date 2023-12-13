@@ -8990,6 +8990,11 @@ button.bg-dark:focus {
     padding-right: 0.25rem !important;
   }
 
+  .pb-lg-1,
+.py-lg-1 {
+    padding-bottom: 0.25rem !important;
+  }
+
 
 
 
