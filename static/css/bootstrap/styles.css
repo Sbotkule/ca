@@ -5440,3 +5440,9 @@ a.close.disabled {
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
