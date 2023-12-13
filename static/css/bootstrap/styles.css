@@ -3753,3 +3753,6 @@ input[type=button].btn-block {
      -moz-appearance: none;
           appearance: none;
 }
+.custom-range:focus {
+  outline: none;
+}
