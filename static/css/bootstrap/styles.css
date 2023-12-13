@@ -4686,3 +4686,7 @@ input[type=button].btn-block {
 a.badge:hover, a.badge:focus {
   text-decoration: none;
 }
+
+.badge:empty {
+  display: none;
+}
