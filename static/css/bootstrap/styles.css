@@ -7353,3 +7353,7 @@ button.bg-dark:focus {
       -ms-user-select: none !important;
           user-select: none !important;
 }
+
+.overflow-auto {
+  overflow: auto !important;
+}
