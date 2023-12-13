@@ -7023,3 +7023,7 @@ button.bg-dark:focus {
   .flex-lg-wrap-reverse {
     flex-wrap: wrap-reverse !important;
   }
+
+  .flex-lg-fill {
+    flex: 1 1 auto !important;
+  }
