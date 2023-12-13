@@ -249,29 +249,29 @@ def productBalanceReport():
         order_by(ProductMovement.product_id).\
         order_by(ProductMovement.movement_id).\
         all()
-balanceDict = defaultdict(lambda: defaultdict(dict))
-tempProduct = ''
-for mov in movs:
-    row = mov[0]
-    if(tempProduct == row.product_id):
-        if(row.to_location and not "qty" in balancedDict[row.product_id][row.to_location]):
-            balancedDict[row.product_id][row.to_location]["qty"] = 0
-        elif (row.from_location and not "qty" in balancedict[row.product_id][row.from_location]):
-            balancedDict[row.product_id][row.from_location]["qty"] = 0 
-        if (row.to_location and "qty" in balanceDict[row.product_id][row.to_location]):
+    balanceDict = defaultdict(lambda: defaultdict(dict))
+    tempProduct = ''
+    for mov in movs:
+        row = mov[0]
+        if(tempProduct == row.product_id):
+            if(row.to_location and not "qty" in balancedDict[row.product_id][row.to_location]):
+                balancedDict[row.product_id][row.to_location]["qty"] = 0
+            elif (row.from_location and not "qty" in balancedict[row.product_id][row.from_location]):
+                balancedDict[row.product_id][row.from_location]["qty"] = 0 
+            if (row.to_location and "qty" in balanceDict[row.product_id][row.to_location]):
             balancedDict[row.product_id][row.to_location]["qty"] += row.qty
-        if (row.from_location and "qty" in balanceDict[row.product_id][row.from_location]):
+            if (row.from_location and "qty" in balanceDict[row.product_id][row.from_location]):
             balancedDict[row.product_id][row.from_location]["qty"] -= row.qty
-        pass
-    else :
-        tempProduct = row.product_id
-        if(row.to_location and not row.from_location):
-            if(balancedDict):
-                balancedDict[row.product_id][row.to_location]["qty"] = row.qty
-            else:
-                balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+            pass
+        else :
+            tempProduct = row.product_id
+            if(row.to_location and not row.from_location):
+                if(balancedDict):
+                    balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+                else:
+                    balancedDict[row.product_id][row.to_location]["qty"] = row.qty
 
-return render_template("product-balance.html", movements=balanceDict)
+    return render_template("product-balance.html", movements=balanceDict)
 
 @app.route("/movements/get-from-locations/", methods=["POST"])
 def getLocations():
