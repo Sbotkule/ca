@@ -97,76 +97,76 @@ def viewProduct():
         product_name = request.form["product_name"]
         new_product = Product(product_id=product_name)
 
-      try:
-          db.session.add(new_product)
-          db.session.commit()
-          return redirect ("/products/")
+        try:
+            db.session.add(new_product)
+            db.session.commit()
+            return redirect ("/products/")
 
-  except:
-      products = Product.query.order_by(Product.date_createde).all()
-      return "Error occured"
-  else:
-    products = product.query.order_by(Product.date_created).all()
-    return render_template("products.html", products=products)
+        except:
+              products = Product.query.order_by(Product.date_createde).all()
+              return "Error occured"
+      else:
+           products = product.query.order_by(Product.date_created).all()
+           return render_template("products.html", products=products)
 
-  @app.route("/update-product/<name>", methods=["POST", "GET"])
-  def updateProduct(name):
-  product = Product.query.get_or_404(name)
-  old_product = product.product_id
+@app.route("/update-product/<name>", methods=["POST", "GET"])
+def updateProduct(name):
+      product = Product.query.get_or_404(name)
+      old_product = product.product_id
 
-  if request.method == "POST":
-    product.product_id  = request.form['product_name']
+      if request.method == "POST":
+        product.product_id  = request.form['product_name']
 
-try:
-  db.session.commit()
-  updateProductInMovemnets(old_product, request.form['product_name'])
-  return redirect("/products/")
+        try:
+            db.session.commit()
+            updateProductInMovemnets(old_product, request.form['product_name'])
+            return redirect("/products/")
 
 except:
-  return "Error occured"
+      return "Error occured"
 else:
-  return render_template("update-product.html", product=product)
+    return render_template("update-product.html", product=product)
 
 @app.route("/delete-product/<name>")
 def deleteProduct(name):
-  product_to_delete = Product.query.get_or_404(name)
+    product_to_delete = Product.query.get_or_404(name)
 
-try:
-    db.session.delete(product_to_delete)
-    db.session.commit()
-    return redirect("/products/")
+    try:
+        db.session.delete(product_to_delete)
+        db.session.commit()
+        return redirect("/products/")
   except:
       return "Error occured"
 
 @app.route("/update-location/<name>", methods=["POST", "GET"])
 def updateLocation(name):
-location = Location.query.get_or_404(name)
-old_location = location.location_id
+    location = Location.query.get_or_404(name)
+    old_location = location.location_id
 
-if request.method == "POST":
-location.location_id = request.form['location_name']
+    if request.method == "POST":
+        location.location_id = request.form['location_name']
 
-try:
-  db.session.commit()
-updateLocationInMovements(
-  old_location, request.form['location_name'])
-return redirect("/locations/")
+        try:
+            db.session.commit()
+            updateLocationInMovements(
+            old_location, request.form['location_name'])
+            return redirect("/locations/")
 
-except:
-      return "Error occured"
-else:
-return render_template("update-location.html", location=location)
+        except:
+              return "Error occured"
+    else:
+        return render_template("update-location.html", location=location)
 
 @app.route("/delete-location/<id>")
 def deleteLocation(id):
-  location_to_delete = Location.query.get_or_404(id)
+    location_to_delete = Location.query.get_or_404(id)
 
-try:
-  db.session.delete(location_to_delete)
-  db.session.commit()
-  return redirect("/locations/")
-except:
-  return "Error occured"
+    try:
+        db.session.delete(location_to_delete)
+        db.session.commit()
+        return redirect("/locations/")
+    except:
+        return "Error occured"
 
 @app.route("/movements/", methods=["POST", ["GET"])
 def viewMovement():
@@ -178,13 +178,13 @@ def viewMovement():
      new_movement    = ProductMovement(
        product_id=product_id, qty=qty, from_location=fromlocation, to_location=toLocation)
 
-try:
-  db.session.add(new.movement)
-  db.session.commit()
-  return redirect("/movements/")
+    try:
+        db.session.add(new.movement)
+        db.session.commit()
+        return redirect("/movements/")
 
 except:
-  return "Error occured"
+      return "Error occured"
 else:
   products  = Product.query.order_by(Product.date_created).all()
   locations = Location.query.order_by(Location.date_created).all()
@@ -206,134 +206,134 @@ else:
 @app.route("/update-movement/<int:id>", methods=["POST", "GET"])
 def updateMovement(id):
 
-  movement  = ProductMovement.query.get_or_404(id)
-  products  = Product.query.order_by(Product.date_created).all()
-  locations = Location.query.order_by(Location.date_created).all()
+    movement  = ProductMovement.query.get_or_404(id)
+    products  = Product.query.order_by(Product.date_created).all()
+    locations = Location.query.order_by(Location.date_created).all()
 
-if request.method == "POST":
-  movement.product_id = request.form["productId"]
-  movement.qty        = request.form["qty"]
-  movement.from_location = request.form["fromLocation"]
-  movement.to_location = request.form["toLocation"]
+    if request.method == "POST":
+        movement.product_id = request.form["productId"]
+        movement.qty        = request.form["qty"]
+        movement.from_location = request.form["fromLocation"]
+        movement.to_location = request.form["toLocation"]
 
-try:
-  db.session.commit()
-  return redirect("/movements/")
+        try:
+          db.session.commit()
+          return redirect("/movements/")
 
-except:
-  return "Error occured"
-else:
-  return render_template("update-movement.html", movement=movement)
+        except:
+              return "Error occured"
+    else:
+        return render_template("update-movement.html", movement=movement)
 
 @app.route("/delete-movement/<int:id>")
 def deleteMovement(id):
-  movement_to_delete = ProductMovement.query.get_or_404(id)
+    movement_to_delete = ProductMovement.query.get_or_404(id)
 
-  try:
-    db.session.delete(movement_to_delete)
-    db.session.commit()
-    return redirect ("/movements/")
-  except:
-    return "Error occured"
+    try:
+        db.session.delete(movement_to_delete)
+        db.session.commit()
+        return redirect ("/movements/")
+    except:
+        return "Error occured"
 
 @app.route("/product-balance/", methods=["POST", "GET"])
 def productBalanceReport():
-  movs = ProductMovement.query.\
-      join(Product, ProductMovement.product_id == Products.product_id).\
-      add_columns(
-        Product.product_id,
-        ProductMovement.qty,
-        productMovement.from_location,
-        ProductMovement.to_location,
-        ProductMovement.movement_time).\
-order_by(ProductMovement.product_id).\
-order_by(ProductMovement.movement_id).\
-all()
+    movs = ProductMovement.query.\
+        join(Product, ProductMovement.product_id == Products.product_id).\
+        add_columns(
+            Product.product_id,
+            ProductMovement.qty,
+            productMovement.from_location,
+            ProductMovement.to_location,
+            ProductMovement.movement_time).\
+        order_by(ProductMovement.product_id).\
+        order_by(ProductMovement.movement_id).\
+        all()
 balanceDict = defaultdict(lambda: defaultdict(dict))
 tempProduct = ''
 for mov in movs:
-  row = mov[0]
-if(tempProduct == row.product_id):
-  if(row.to_location and not "qty" in balancedDict[row.product_id][row.to_location]):
-    balancedDict[row.product_id][row.to_location]["qty"] = 0
-elif (row.from_location and not "qty" in balancedict[row.product_id][row.from_location]):
-balancedDict[row.product_id][row.from_location]["qty"] = 0 
-if (row.to_location and "qty" in balanceDict[row.product_id][row.to_location]):
- balancedDict[row.product_id][row.to_location]["qty"] += row.qty
-if (row.from_location and "qty" in balanceDict[row.product_id][row.from_location]):
-  balancedDict[row.product_id][row.from_location]["qty"] -= row.qty
-  pass
-else :
-  tempProduct = row.product_id
-  if(row.to_location and not row.from_location):
-    if(balancedDict):
-      balancedDict[row.product_id][row.to_location]["qty"] = row.qty
-else:
-    balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+    row = mov[0]
+    if(tempProduct == row.product_id):
+        if(row.to_location and not "qty" in balancedDict[row.product_id][row.to_location]):
+            balancedDict[row.product_id][row.to_location]["qty"] = 0
+        elif (row.from_location and not "qty" in balancedict[row.product_id][row.from_location]):
+            balancedDict[row.product_id][row.from_location]["qty"] = 0 
+        if (row.to_location and "qty" in balanceDict[row.product_id][row.to_location]):
+            balancedDict[row.product_id][row.to_location]["qty"] += row.qty
+        if (row.from_location and "qty" in balanceDict[row.product_id][row.from_location]):
+            balancedDict[row.product_id][row.from_location]["qty"] -= row.qty
+        pass
+    else :
+        tempProduct = row.product_id
+        if(row.to_location and not row.from_location):
+            if(balancedDict):
+                balancedDict[row.product_id][row.to_location]["qty"] = row.qty
+            else:
+                balancedDict[row.product_id][row.to_location]["qty"] = row.qty
 
 return render_template("product-balance.html", movement=balanceDict)
 
- @app.route("/movements/get-from-locations/", methods=["POST"])
+@app.route("/movements/get-from-locations/", methods=["POST"])
 def getLocations():
-  product = request.from["productId"]
-  location = request.form["location"]
-  locationDict = defaultdict(lambda: defaultdict(dict))
-  locations = ProductsMovement.query.\
-      filter(ProductMovement.product_id == product).\
-      filter(ProductMovement.to_location != '').\
-  add_columns(ProductMovement.from_location, ProductMovement.to_location, ProductMovement.qty).\
-  all()
+    product = request.from["productId"]
+    location = request.form["location"]
+    locationDict = defaultdict(lambda: defaultdict(dict))
+    locations = ProductsMovement.query.\
+        filter(ProductMovement.product_id == product).\
+        filter(ProductMovement.to_location != '').\
+        add_columns(ProductMovement.from_location, ProductMovement.to_location, ProductMovement.qty).\
+        all()
 
-for key, location in enumerate(location):
-  if(locationDict[location.to_location] and locationDict[location.to_location]["qty"]):
-    locationDict[location.to_location]["qty"] += location.qty
-  else:
-    locationDict[location.to_loaction]["qty"] = location.qty
+    for key, location in enumerate(location):
+        if(locationDict[location.to_location] and locationDict[location.to_location]["qty"]):
+            locationDict[location.to_location]["qty"] += location.qty
+        else:
+            locationDict[location.to_loaction]["qty"] = location.qty
 
-return locationDict
+    return locationDict
 
 
 @app.route("/dub-location/", methods=["POST", "GET"])
 def getDuplicate():
-  location = location.form["location"]
-  locations = Location.query.\
-    filter(Location.location_id == location).\
-    all()
-  print(locations)
-  if locations:
-    return {"output": False}
-  else:
-    return {"output": True}
+    location = location.form["location"]
+    locations = Location.query.\
+        filter(Location.location_id == location).\
+        all()
+    print(locations)
+    if locations:
+        return {"output": False}
+    else:
+        return {"output": True}
 
 @app.route("/dub-products/", methods=["POST", "GET"])
 def getPDublicate():
-  product_name = request.form["product_name"]
-  products = Products.query.\
-      filter(Product.product_id == product_name).\
-  all()
-  print(products)
-  if products:
-    return {"output": False}
-  else:
-    return {"output": True}
+    product_name = request.form["product_name"]
+    products = Products.query.\
+        filter(Product.product_id == product_name).\
+        all()
+    print(products)
+    if products:
+        return {"output": False}
+    else:
+        return {"output": True}
 
 def updateLocationInMovements(oldLocation, newLocation):
-  movement = ProductMovement.query.filter(ProductMovement.from_location == oldLocation).all()
-  movement2 = ProductMovement.query.filter(ProductMovement.to_location == oldLocation).all()
-  for mov in movement2:
-    mov.to_location = newLocation
-  for mov in movement:
-    mov.from_location = newLocation
+    movement = ProductMovement.query.filter(ProductMovement.from_location == oldLocation).all()
+    movement2 = ProductMovement.query.filter(ProductMovement.to_location == oldLocation).all()
+    for mov in movement2:
+        mov.to_location = newLocation
+    for mov in movement:
+        mov.from_location = newLocation
 
-db.session.commit()
+    db.session.commit()
 
 def updateProductInMovements(oldProduct, newProduct):
-  movement = ProductMovement.query.filter(ProductMovement.product_id == oldProduct).all()
-  for mov in movement:
-    mov.product_id = newProduct
+    movement = ProductMovement.query.filter(ProductMovement.product_id == oldProduct).all()
+    for mov in movement:
+        mov.product_id = newProduct
 
-db.session.commit()
+    db.session.commit()
 
 if __name__ == "__main__":
-  app.run(debug=True)
+    app.run(debug=True)
   
