@@ -8797,6 +8797,11 @@ button.bg-dark:focus {
     margin-right: auto !important;
   }
 
+  .mb-md-auto,
+.my-md-auto {
+    margin-bottom: auto !important;
+  }
+
 
 
 
