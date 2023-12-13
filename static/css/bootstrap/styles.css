@@ -4657,3 +4657,7 @@ input[type=button].btn-block {
   font-size: 0.875rem;
   line-height: 1.5;
 }
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
