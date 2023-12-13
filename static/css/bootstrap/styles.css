@@ -7152,3 +7152,7 @@ button.bg-dark:focus {
   .flex-xl-wrap {
     flex-wrap: wrap !important;
   }
+
+  .flex-xl-nowrap {
+    flex-wrap: nowrap !important;
+  }
