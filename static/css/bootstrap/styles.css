@@ -8522,3 +8522,8 @@ button.bg-dark:focus {
   .p-md-0 {
     padding: 0 !important;
   }
+
+  .pt-md-0,
+.py-md-0 {
+    padding-top: 0 !important;
+  }
