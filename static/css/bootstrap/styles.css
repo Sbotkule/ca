@@ -4839,3 +4839,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-link {
   font-weight: 700;
 }
+
+.alert-dismissible {
+  padding-right: 4rem;
+}
