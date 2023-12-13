@@ -9992,3 +9992,8 @@ h3 {
 .table th {
     background-color: #fff !important;
   }
+
+  .table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6 !important;
+  }
