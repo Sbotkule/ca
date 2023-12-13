@@ -6462,3 +6462,7 @@ button.bg-dark:focus {
   .d-xl-inline {
     display: inline !important;
   }
+
+  .d-xl-inline-block {
+    display: inline-block !important;
+  }
