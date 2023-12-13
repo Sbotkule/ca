@@ -9369,3 +9369,13 @@ button.bg-dark:focus {
 .my-xl-5 {
     margin-top: 3rem !important;
   }
+
+  .mr-xl-5,
+.mx-xl-5 {
+    margin-right: 3rem !important;
+  }
+
+  .mb-xl-5,
+.my-xl-5 {
+    margin-bottom: 3rem !important;
+  }
