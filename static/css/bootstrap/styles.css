@@ -9312,3 +9312,12 @@ button.bg-dark:focus {
 .mx-xl-2 {
     margin-left: 0.5rem !important;
   }
+
+  .m-xl-3 {
+    margin: 1rem !important;
+  }
+
+  .mt-xl-3,
+.my-xl-3 {
+    margin-top: 1rem !important;
+  }
