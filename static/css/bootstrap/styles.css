@@ -9732,3 +9732,7 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
