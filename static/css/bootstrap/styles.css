@@ -3849,3 +3849,12 @@ input[type=button].btn-block {
 .custom-range::-ms-thumb:active {
   background-color: #b3d7ff;
 }
+.custom-range::-ms-track {
+  width: 100%;
+  height: 0.5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0.5rem;
+}
