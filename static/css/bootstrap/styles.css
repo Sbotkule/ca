@@ -4295,3 +4295,6 @@ input[type=button].btn-block {
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5);
 }
+.navbar-light .navbar-text a {
+  color: rgba(0, 0, 0, 0.9);
+}
