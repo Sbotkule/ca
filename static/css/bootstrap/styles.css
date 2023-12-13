@@ -3809,3 +3809,9 @@ input[type=button].btn-block {
   -moz-appearance: none;
        appearance: none;
 }
+@media (prefers-reduced-motion: reduce) {
+  .custom-range::-moz-range-thumb {
+    -moz-transition: none;
+    transition: none;
+  }
+}
