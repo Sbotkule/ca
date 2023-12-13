@@ -6408,3 +6408,7 @@ button.bg-dark:focus {
   .d-md-table-cell {
     display: table-cell !important;
   }
+
+  .d-md-flex {
+    display: flex !important;
+  }
