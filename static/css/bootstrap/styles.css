@@ -7700,3 +7700,7 @@ button.bg-dark:focus {
 .px-1 {
   padding-left: 0.25rem !important;
 }
+
+.p-2 {
+  padding: 0.5rem !important;
+}
