@@ -4609,3 +4609,8 @@ input[type=button].btn-block {
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
+.page-link:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
