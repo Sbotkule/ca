@@ -4475,3 +4475,7 @@ input[type=button].btn-block {
     margin-left: 15px;
   }
 }
+
+.card-group > .card {
+  margin-bottom: 15px;
+}
