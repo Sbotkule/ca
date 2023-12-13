@@ -4575,3 +4575,6 @@ input[type=button].btn-block {
   color: #6c757d;
   content: "/";
 }
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
