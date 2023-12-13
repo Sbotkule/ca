@@ -4792,3 +4792,8 @@ a.badge-light:focus, a.badge-light.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
+
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+}
