@@ -9762,3 +9762,7 @@ button.bg-dark:focus {
   .text-xl-left {
     text-align: left !important;
   }
+
+  .text-xl-right {
+    text-align: right !important;
+  }
