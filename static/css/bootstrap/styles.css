@@ -5051,3 +5051,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
+.list-group-item:last-child {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
