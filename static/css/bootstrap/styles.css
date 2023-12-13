@@ -8431,3 +8431,13 @@ button.bg-dark:focus {
 .my-md-2 {
     margin-top: 0.5rem !important;
   }
+
+  .mr-md-2,
+.mx-md-2 {
+    margin-right: 0.5rem !important;
+  }
+
+  .mb-md-2,
+.my-md-2 {
+    margin-bottom: 0.5rem !important;
+  }
