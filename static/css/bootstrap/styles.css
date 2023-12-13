@@ -6491,3 +6491,7 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
+@media print {
+  .d-print-none {
+    display: none !important;
+  }
