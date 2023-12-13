@@ -7232,3 +7232,7 @@ button.bg-dark:focus {
   .align-content-xl-center {
     align-content: flex-center !important;
   }
+
+  .align-content-xl-between {
+    align-content: space-between !important;
+  }
