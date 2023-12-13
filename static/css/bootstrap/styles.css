@@ -8446,3 +8446,7 @@ button.bg-dark:focus {
 .mx-md-2 {
     margin-left: 0.5rem !important;
   }
+
+  .m-md-3 {
+    margin: 1rem !important;
+  }
