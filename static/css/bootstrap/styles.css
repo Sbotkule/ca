@@ -6519,3 +6519,7 @@ button.bg-dark:focus {
   .d-print-table-cell {
     display: table-cell !important;
   }
+
+  .d-print-flex {
+    display: flex !important;
+  }
