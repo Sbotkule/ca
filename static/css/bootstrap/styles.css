@@ -7083,3 +7083,7 @@ button.bg-dark:focus {
   .align-items-lg-stretch {
     align-items: flex-stretch !important;
   }
+
+  .align-content-lg-start {
+    align-content: flex-start !important;
+  }
