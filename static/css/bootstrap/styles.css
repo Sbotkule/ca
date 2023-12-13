@@ -4661,3 +4661,7 @@ input[type=button].btn-block {
   border-top-left-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
 }
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
