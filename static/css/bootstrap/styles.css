@@ -5630,3 +5630,7 @@ a.close.disabled {
   border-width: 0.4rem 0.4rem 0;
   border-top-color: #000;
 }
+
+.bs-tooltip-right, .bs-tooltip-auto[x-placement^=right] {
+  padding: 0 0.4rem;
+}
