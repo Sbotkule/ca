@@ -7960,7 +7960,17 @@ button.bg-dark:focus {
 .my-sm-0 {
     margin-bottom: 0 !important;
   }
+  
   .ml-sm-0,
 .mx-sm-0 {
     margin-left: 0 !important;
+  }
+
+   .m-sm-1 {
+    margin: 0.25rem !important;
+  }
+
+  .mt-sm-1,
+.my-sm-1 {
+    margin-top: 0.25rem !important;
   }
