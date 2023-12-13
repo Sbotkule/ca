@@ -6785,3 +6785,7 @@ button.bg-dark:focus {
   .justify-content-sm-between {
     justify-content: space-between !important;
   }
+
+  .justify-content-sm-around {
+    justify-content: space-around !important;
+  }
