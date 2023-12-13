@@ -9000,6 +9000,15 @@ button.bg-dark:focus {
     padding-left: 0.25rem !important;
   }
 
+  .p-lg-2 {
+    padding: 0.5rem !important;
+  }
+
+  .pt-lg-2,
+.py-lg-2 {
+    padding-top: 0.5rem !important;
+  }
+
 
 
 
