@@ -10040,3 +10040,7 @@ body {
 #layoutAuthentication #layoutAuthentication_footer {
   min-width: 0;
 }
+
+#layoutSidenav {
+  display: flex;
+}
