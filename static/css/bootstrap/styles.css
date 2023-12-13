@@ -6496,6 +6496,10 @@ button.bg-dark:focus {
     display: none !important;
   }
 
-.d-print-inline {
+  .d-print-inline {
+    display: inline !important;
+  }
+
+  .d-print-inline {
     display: inline !important;
   }
