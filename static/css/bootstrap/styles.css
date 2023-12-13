@@ -6466,3 +6466,7 @@ button.bg-dark:focus {
   .d-xl-inline-block {
     display: inline-block !important;
   }
+
+  .d-xl-block {
+    display: block !important;
+  }
