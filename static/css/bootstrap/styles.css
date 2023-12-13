@@ -7652,3 +7652,7 @@ button.bg-dark:focus {
 .mx-5 {
   margin-left: 3rem !important;
 }
+
+.p-0 {
+  padding: 0 !important;
+}
