@@ -4479,3 +4479,8 @@ input[type=button].btn-block {
 .card-group > .card {
   margin-bottom: 15px;
 }
+@media (min-width: 576px) {
+  .card-group {
+    display: flex;
+    flex-flow: row wrap;
+  }
