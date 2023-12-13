@@ -4484,3 +4484,7 @@ input[type=button].btn-block {
     display: flex;
     flex-flow: row wrap;
   }
+  .card-group > .card {
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
