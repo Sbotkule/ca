@@ -122,10 +122,10 @@ def updateProduct(name):
             updateProductInMovemnets(old_product, request.form['product_name'])
             return redirect("/products/")
 
-except:
-      return "Error occured"
-else:
-    return render_template("update-product.html", product=product)
+        except:
+            return "Error occured"
+        else:
+            return render_template("update-product.html", product=product)
 
 @app.route("/delete-product/<name>")
 def deleteProduct(name):
