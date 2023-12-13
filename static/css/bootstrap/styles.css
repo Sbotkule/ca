@@ -8860,6 +8860,11 @@ button.bg-dark:focus {
     margin: 0.5rem !important;
   }
 
+  .mt-lg-2,
+.my-lg-2 {
+    margin-top: 0.5rem !important;
+  }
+
 
 
 
