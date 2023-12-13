@@ -5023,3 +5023,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   margin-bottom: 0;
   border-radius: 0.25rem;
 }
+
+.list-group-item-action {
+  width: 100%;
+  color: #495057;
+  text-align: inherit;
+}
