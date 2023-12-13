@@ -5105,4 +5105,7 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0;
   }
-  
+  .list-group-horizontal-sm > .list-group-item:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+  }
