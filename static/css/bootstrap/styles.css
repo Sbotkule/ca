@@ -10239,3 +10239,6 @@ body {
 .sb-sidenav-light .sb-sidenav-menu .sb-sidenav-menu-heading {
   color: #adb5bd;
 }
+.sb-sidenav-light .sb-sidenav-menu .nav-link {
+  color: #212529;
+}
