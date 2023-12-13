@@ -6228,3 +6228,7 @@ button.bg-dark:focus {
 .border-secondary {
   border-color: #6c757d !important;
 }
+
+.border-success {
+  border-color: #28a745 !important;
+}
