@@ -4701,3 +4701,8 @@ a.badge:hover, a.badge:focus {
   padding-left: 0.6em;
   border-radius: 10rem;
 }
+
+.badge-primary {
+  color: #fff;
+  background-color: #007bff;
+}
