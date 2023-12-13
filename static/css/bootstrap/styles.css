@@ -5665,3 +5665,8 @@ a.close.disabled {
   width: 0.4rem;
   height: 0.8rem;
 }
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^=left] .arrow::before {
+  left: 0;
+  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-left-color: #000;
+}
