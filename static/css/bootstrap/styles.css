@@ -4831,3 +4831,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
+
+.alert-heading {
+  color: inherit;
+}
