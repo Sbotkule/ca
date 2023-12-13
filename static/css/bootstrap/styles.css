@@ -8508,3 +8508,8 @@ button.bg-dark:focus {
 .mx-md-5 {
     margin-right: 3rem !important;
   }
+
+  mb-md-5,
+.my-md-5 {
+    margin-bottom: 3rem !important;
+  }
