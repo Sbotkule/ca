@@ -7119,3 +7119,7 @@ button.bg-dark:focus {
   .align-self-lg-end {
     align-self: end !important;
   }
+
+  .align-self-lg-center {
+    align-self: center !important;
+  }
