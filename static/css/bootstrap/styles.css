@@ -4862,3 +4862,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-primary .alert-link {
   color: #002752;
 }
+
+.alert-secondary {
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
