@@ -8841,6 +8841,11 @@ button.bg-dark:focus {
     margin-top: 0.25rem !important;
   }
 
+  .mr-lg-1,
+.mx-lg-1 {
+    margin-right: 0.25rem !important;
+  }
+
 
 
 
