@@ -4225,3 +4225,7 @@ input[type=button].btn-block {
     display: none;
   }
 }
+.navbar-expand {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
