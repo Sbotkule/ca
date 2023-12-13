@@ -7051,3 +7051,7 @@ button.bg-dark:focus {
   .justify-content-lg-end {
     justify-content: flex-end !important;
   }
+
+  .justify-content-lg-center {
+    justify-content: center !important;
+  }
