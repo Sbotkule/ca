@@ -8966,6 +8966,11 @@ button.bg-dark:focus {
     padding-right: 0 !important;
   }
 
+  .pb-lg-0,
+.py-lg-0 {
+    padding-bottom: 0 !important;
+  }
+
 
 
 
