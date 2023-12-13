@@ -5136,3 +5136,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   .list-group-horizontal-md > .list-group-item.active {
     margin-top: 0;
   }
+  .list-group-horizontal-md > .list-group-item + .list-group-item {
+    border-top-width: 1px;
+    border-left-width: 0;
+  }
