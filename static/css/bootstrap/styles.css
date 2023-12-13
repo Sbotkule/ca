@@ -4835,3 +4835,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-heading {
   color: inherit;
 }
+
+.alert-link {
+  font-weight: 700;
+}
