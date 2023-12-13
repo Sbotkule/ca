@@ -8918,6 +8918,11 @@ button.bg-dark:focus {
     margin-right: 1.5rem !important;
   }
 
+  .mb-lg-4,
+.my-lg-4 {
+    margin-bottom: 1.5rem !important;
+  }
+
 
 
 
