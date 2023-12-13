@@ -8471,3 +8471,11 @@ button.bg-dark:focus {
     margin-left: 1rem !important;
   }
 
+.m-md-4 {
+    margin: 1.5rem !important;
+  }
+
+  .mt-md-4,
+.my-md-4 {
+    margin-top: 1.5rem !important;
+  }
