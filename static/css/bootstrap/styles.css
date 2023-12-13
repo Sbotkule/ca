@@ -7196,3 +7196,7 @@ button.bg-dark:focus {
   .justify-content-xl-between {
     justify-content: space-between !important;
   }
+
+  .justify-content-xl-around {
+    justify-content: space-around !important;
+  }
