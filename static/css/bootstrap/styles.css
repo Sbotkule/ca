@@ -9980,3 +9980,7 @@ h3 {
   .navbar {
     display: none;
   }
+
+  .badge {
+    border: 1px solid #000;
+  }
