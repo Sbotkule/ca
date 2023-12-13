@@ -9745,3 +9745,7 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
