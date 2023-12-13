@@ -6821,3 +6821,7 @@ button.bg-dark:focus {
   .align-content-sm-center {
     align-content: center !important;
   }
+
+  .align-content-sm-between {
+    align-content: space-between !important;
+  }
