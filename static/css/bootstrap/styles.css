@@ -7896,3 +7896,8 @@ button.bg-dark:focus {
 .m-n5 {
   margin: -3rem !important;
 }
+
+.mt-n5,
+.my-n5 {
+  margin-top: -3rem !important;
+}
