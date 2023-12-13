@@ -7079,3 +7079,7 @@ button.bg-dark:focus {
   .align-items-lg-baseline {
     align-items: flex-baseline !important;
   }
+
+  .align-items-lg-stretch {
+    align-items: flex-stretch !important;
+  }
