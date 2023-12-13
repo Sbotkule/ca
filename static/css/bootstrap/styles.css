@@ -10163,3 +10163,6 @@ body {
   height: 100%;
   flex-wrap: nowrap;
 }
+.sb-sidenav .sb-sidenav-menu {
+  flex-grow: 1;
+}
