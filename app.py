@@ -73,7 +73,7 @@ def index():
         locations = Location.query.order_by(Location.date_created).all()
         return render_template("index.html", products=products, locations=locations)
 
-@app-route('/locations/', methods=["POST", "GET"])
+@app.route('/locations/', methods=["POST", "GET"])
 def viewLocation():
     if (request.method == "POST") and ('location_name' in request.form):
         location_name = request.form["location_name"]
