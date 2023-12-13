@@ -4496,3 +4496,7 @@ input[type=button].btn-block {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+  .card-group > .card:not(:last-child) .card-img-top,
+.card-group > .card:not(:last-child) .card-header {
+    border-top-right-radius: 0;
+  }
