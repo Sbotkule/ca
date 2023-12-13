@@ -5211,3 +5211,8 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #004085;
   background-color: #9fcdff;
 }
+.list-group-item-primary.list-group-item-action.active {
+  color: #fff;
+  background-color: #004085;
+  border-color: #004085;
+}
