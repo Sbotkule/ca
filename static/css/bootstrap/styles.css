@@ -6652,3 +6652,7 @@ button.bg-dark:focus {
 .justify-content-around {
   justify-content: space-around !important;
 }
+
+.align-items-start {
+  align-items: flex-start !important;
+}
