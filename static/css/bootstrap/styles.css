@@ -5726,3 +5726,6 @@ a.close.disabled {
 .bs-popover-top, .bs-popover-auto[x-placement^=top] {
   margin-bottom: 0.5rem;
 }
+.bs-popover-top > .arrow, .bs-popover-auto[x-placement^=top] > .arrow {
+  bottom: calc(-0.5rem - 1px);
+}
