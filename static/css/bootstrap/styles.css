@@ -4535,3 +4535,7 @@ input[type=button].btn-block {
     width: 100%;
   }
 }
+
+.accordion > .card {
+  overflow: hidden;
+}
