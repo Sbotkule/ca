@@ -7107,3 +7107,7 @@ button.bg-dark:focus {
   .align-content-lg-stretch {
     align-content: flex-stretch !important;
   }
+
+  .align-self-lg-auto {
+    align-self: auto !important;
+  }
