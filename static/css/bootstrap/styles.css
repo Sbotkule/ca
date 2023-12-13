@@ -5424,3 +5424,8 @@ a.close.disabled {
 .modal.modal-static .modal-dialog {
   transform: scale(1.02);
 }
+
+.modal-dialog-scrollable {
+  display: flex;
+  max-height: calc(100% - 1rem);
+}
