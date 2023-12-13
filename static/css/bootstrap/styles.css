@@ -4904,3 +4904,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #fff3cd;
   border-color: #ffeeba;
 }
+.alert-warning hr {
+  border-top-color: #ffe8a1;
+}
