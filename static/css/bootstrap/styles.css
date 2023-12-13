@@ -6371,3 +6371,7 @@ button.bg-dark:focus {
   .d-sm-table-cell {
     display: table-cell !important;
   }
+
+  .d-sm-flex {
+    display: flex !important;
+  }
