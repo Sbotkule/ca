@@ -9234,3 +9234,9 @@ button.bg-dark:focus {
 .my-lg-auto {
     margin-bottom: auto !important;
   }
+
+  .ml-lg-auto,
+.mx-lg-auto {
+    margin-left: auto !important;
+  }
+}
