@@ -6232,3 +6232,7 @@ button.bg-dark:focus {
 .border-success {
   border-color: #28a745 !important;
 }
+
+.border-info {
+  border-color: #17a2b8 !important;
+}
