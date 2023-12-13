@@ -7260,3 +7260,7 @@ button.bg-dark:focus {
   .align-self-xl-center {
     align-self: center !important;
   }
+
+  .align-self-xl-baseline {
+    align-self: baseline !important;
+  }
