@@ -8768,6 +8768,11 @@ button.bg-dark:focus {
     margin-top: -3rem !important;
   }
 
+  .mr-md-n5,
+.mx-md-n5 {
+    margin-right: -3rem !important;
+  }
+
 
 
 
