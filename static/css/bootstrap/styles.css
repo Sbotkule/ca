@@ -5606,3 +5606,9 @@ a.close.disabled {
 .tooltip.show {
   opacity: 0.9;
 }
+.tooltip .arrow {
+  position: absolute;
+  display: block;
+  width: 0.8rem;
+  height: 0.4rem;
+}
