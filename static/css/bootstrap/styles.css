@@ -7743,3 +7743,8 @@ button.bg-dark:focus {
 .py-3 {
   padding-bottom: 1rem !important;
 }
+
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
