@@ -5331,3 +5331,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
   opacity: 0.75;
 }
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
