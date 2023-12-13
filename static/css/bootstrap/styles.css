@@ -10106,3 +10106,6 @@ body {
   height: 100vh;
   z-index: 1038;
 }
+.sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav {
+  padding-top: 56px;
+}
