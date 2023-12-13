@@ -9033,6 +9033,11 @@ button.bg-dark:focus {
     padding-top: 1rem !important;
   }
 
+  .pr-lg-3,
+.px-lg-3 {
+    padding-right: 1rem !important;
+  }
+
 
 
 
