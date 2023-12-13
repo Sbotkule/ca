@@ -7339,3 +7339,9 @@ button.bg-dark:focus {
       -ms-user-select: all !important;
           user-select: all !important;
 }
+.user-select-auto {
+  -webkit-user-select: auto !important;
+     -moz-user-select: auto !important;
+      -ms-user-select: auto !important;
+          user-select: auto !important;
+}
