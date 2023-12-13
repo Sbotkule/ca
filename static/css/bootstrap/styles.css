@@ -4985,3 +4985,8 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #007bff;
   transition: width 0.6s ease;
 }
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    transition: none;
+  }
+}
