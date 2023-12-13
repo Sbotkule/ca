@@ -10144,3 +10144,9 @@ body {
   height: 56px;
   z-index: 1039;
 }
+.sb-topnav .navbar-brand {
+  width: 225px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+}
