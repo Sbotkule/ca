@@ -7039,3 +7039,7 @@ button.bg-dark:focus {
   .flex-lg-shrink-0 {
     flex-shrink: 0 !important;
   }
+
+  .flex-lg-shrink-1 {
+    flex-shrink: 1 !important;
+  }
