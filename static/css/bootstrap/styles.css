@@ -4578,3 +4578,6 @@ input[type=button].btn-block {
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline;
 }
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
