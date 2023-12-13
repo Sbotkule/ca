@@ -9254,3 +9254,8 @@ button.bg-dark:focus {
 .mx-xl-0 {
     margin-right: 0 !important;
   }
+
+  .mb-xl-0,
+.my-xl-0 {
+    margin-bottom: 0 !important;
+  }
