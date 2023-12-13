@@ -4006,3 +4006,11 @@ input[type=button].btn-block {
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
