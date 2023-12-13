@@ -6244,3 +6244,7 @@ button.bg-dark:focus {
 .border-danger {
   border-color: #dc3545 !important;
 }
+
+.border-light {
+  border-color: #f8f9fa !important;
+}
