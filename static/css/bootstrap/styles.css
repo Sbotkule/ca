@@ -10037,3 +10037,6 @@ body {
   min-width: 0;
   flex-grow: 1;
 }
+#layoutAuthentication #layoutAuthentication_footer {
+  min-width: 0;
+}
