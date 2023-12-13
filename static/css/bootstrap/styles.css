@@ -7103,3 +7103,7 @@ button.bg-dark:focus {
   .align-content-lg-around {
     align-content: flex-around !important;
   }
+
+  .align-content-lg-stretch {
+    align-content: flex-stretch !important;
+  }
