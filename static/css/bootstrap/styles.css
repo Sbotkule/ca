@@ -6511,3 +6511,7 @@ button.bg-dark:focus {
   .d-print-table {
     display: table !important;
   }
+
+  .d-print-table-row {
+    display: table-row !important;
+  }
